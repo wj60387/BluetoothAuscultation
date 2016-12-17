@@ -1,0 +1,435 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="AuscultationService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="WSHttpBinding_IAuscultationService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IAuscultationService_GetEndPoint_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEndPoint" />
+  </wsdl:message>
+  <wsdl:message name="IAuscultationService_GetEndPoint_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEndPointResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuscultationService_Insert_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert" />
+  </wsdl:message>
+  <wsdl:message name="IAuscultationService_Insert_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuscultationService_Update_InputMessage">
+    <wsdl:part name="parameters" element="tns:Update" />
+  </wsdl:message>
+  <wsdl:message name="IAuscultationService_Update_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuscultationService_AccountCredentials_InputMessage">
+    <wsdl:part name="parameters" element="tns:AccountCredentials" />
+  </wsdl:message>
+  <wsdl:message name="IAuscultationService_AccountCredentials_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AccountCredentialsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuscultationService_UpdateStetInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStetInfo" />
+  </wsdl:message>
+  <wsdl:message name="IAuscultationService_UpdateStetInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStetInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuscultationService_GetFilePath_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFilePath" />
+  </wsdl:message>
+  <wsdl:message name="IAuscultationService_GetFilePath_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFilePathResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuscultationService_GetFilePath2_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFilePath2" />
+  </wsdl:message>
+  <wsdl:message name="IAuscultationService_GetFilePath2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFilePath2Response" />
+  </wsdl:message>
+  <wsdl:message name="IAuscultationService_GetRoot_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoot" />
+  </wsdl:message>
+  <wsdl:message name="IAuscultationService_GetRoot_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRootResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuscultationService_GetData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetData" />
+  </wsdl:message>
+  <wsdl:message name="IAuscultationService_GetData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuscultationService_ExecuteDataset_InputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteDataset" />
+  </wsdl:message>
+  <wsdl:message name="IAuscultationService_ExecuteDataset_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteDatasetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuscultationService_ExecuteNonQuery_InputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteNonQuery" />
+  </wsdl:message>
+  <wsdl:message name="IAuscultationService_ExecuteNonQuery_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteNonQueryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuscultationService_ExecuteScalar_InputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteScalar" />
+  </wsdl:message>
+  <wsdl:message name="IAuscultationService_ExecuteScalar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteScalarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuscultationService_DeleteFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteFile" />
+  </wsdl:message>
+  <wsdl:message name="IAuscultationService_DeleteFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuscultationService_isExistFolder_InputMessage">
+    <wsdl:part name="parameters" element="tns:isExistFolder" />
+  </wsdl:message>
+  <wsdl:message name="IAuscultationService_isExistFolder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:isExistFolderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuscultationService_CreateFolder_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateFolder" />
+  </wsdl:message>
+  <wsdl:message name="IAuscultationService_CreateFolder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateFolderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuscultationService_GetFolderFiles_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFolderFiles" />
+  </wsdl:message>
+  <wsdl:message name="IAuscultationService_GetFolderFiles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFolderFilesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuscultationService_GetFileLength_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFileLength" />
+  </wsdl:message>
+  <wsdl:message name="IAuscultationService_GetFileLength_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFileLengthResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuscultationService_isExistFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:isExistFile" />
+  </wsdl:message>
+  <wsdl:message name="IAuscultationService_isExistFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:isExistFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuscultationService_UpLoadFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpLoadFile" />
+  </wsdl:message>
+  <wsdl:message name="IAuscultationService_UpLoadFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpLoadFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuscultationService_DownLoadFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:DownLoadFile" />
+  </wsdl:message>
+  <wsdl:message name="IAuscultationService_DownLoadFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DownLoadFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuscultationService_GetFilesInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFilesInfo" />
+  </wsdl:message>
+  <wsdl:message name="IAuscultationService_GetFilesInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFilesInfoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IAuscultationService">
+    <wsdl:operation name="GetEndPoint">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuscultationService/GetEndPoint" message="tns:IAuscultationService_GetEndPoint_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuscultationService/GetEndPointResponse" message="tns:IAuscultationService_GetEndPoint_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuscultationService/Insert" message="tns:IAuscultationService_Insert_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuscultationService/InsertResponse" message="tns:IAuscultationService_Insert_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Update">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuscultationService/Update" message="tns:IAuscultationService_Update_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuscultationService/UpdateResponse" message="tns:IAuscultationService_Update_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AccountCredentials">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuscultationService/AccountCredentials" message="tns:IAuscultationService_AccountCredentials_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuscultationService/AccountCredentialsResponse" message="tns:IAuscultationService_AccountCredentials_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStetInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuscultationService/UpdateStetInfo" message="tns:IAuscultationService_UpdateStetInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuscultationService/UpdateStetInfoResponse" message="tns:IAuscultationService_UpdateStetInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFilePath">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuscultationService/GetFilePath" message="tns:IAuscultationService_GetFilePath_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuscultationService/GetFilePathResponse" message="tns:IAuscultationService_GetFilePath_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFilePath2">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuscultationService/GetFilePath2" message="tns:IAuscultationService_GetFilePath2_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuscultationService/GetFilePath2Response" message="tns:IAuscultationService_GetFilePath2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRoot">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuscultationService/GetRoot" message="tns:IAuscultationService_GetRoot_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuscultationService/GetRootResponse" message="tns:IAuscultationService_GetRoot_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuscultationService/GetData" message="tns:IAuscultationService_GetData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuscultationService/GetDataResponse" message="tns:IAuscultationService_GetData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteDataset">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuscultationService/ExecuteDataset" message="tns:IAuscultationService_ExecuteDataset_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuscultationService/ExecuteDatasetResponse" message="tns:IAuscultationService_ExecuteDataset_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteNonQuery">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuscultationService/ExecuteNonQuery" message="tns:IAuscultationService_ExecuteNonQuery_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuscultationService/ExecuteNonQueryResponse" message="tns:IAuscultationService_ExecuteNonQuery_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteScalar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuscultationService/ExecuteScalar" message="tns:IAuscultationService_ExecuteScalar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuscultationService/ExecuteScalarResponse" message="tns:IAuscultationService_ExecuteScalar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuscultationService/DeleteFile" message="tns:IAuscultationService_DeleteFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuscultationService/DeleteFileResponse" message="tns:IAuscultationService_DeleteFile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="isExistFolder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuscultationService/isExistFolder" message="tns:IAuscultationService_isExistFolder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuscultationService/isExistFolderResponse" message="tns:IAuscultationService_isExistFolder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateFolder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuscultationService/CreateFolder" message="tns:IAuscultationService_CreateFolder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuscultationService/CreateFolderResponse" message="tns:IAuscultationService_CreateFolder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFolderFiles">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuscultationService/GetFolderFiles" message="tns:IAuscultationService_GetFolderFiles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuscultationService/GetFolderFilesResponse" message="tns:IAuscultationService_GetFolderFiles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFileLength">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuscultationService/GetFileLength" message="tns:IAuscultationService_GetFileLength_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuscultationService/GetFileLengthResponse" message="tns:IAuscultationService_GetFileLength_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="isExistFile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuscultationService/isExistFile" message="tns:IAuscultationService_isExistFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuscultationService/isExistFileResponse" message="tns:IAuscultationService_isExistFile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpLoadFile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuscultationService/UpLoadFile" message="tns:IAuscultationService_UpLoadFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuscultationService/UpLoadFileResponse" message="tns:IAuscultationService_UpLoadFile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DownLoadFile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuscultationService/DownLoadFile" message="tns:IAuscultationService_DownLoadFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuscultationService/DownLoadFileResponse" message="tns:IAuscultationService_DownLoadFile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFilesInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuscultationService/GetFilesInfo" message="tns:IAuscultationService_GetFilesInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuscultationService/GetFilesInfoResponse" message="tns:IAuscultationService_GetFilesInfo_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSHttpBinding_IAuscultationService" type="tns:IAuscultationService">
+    <wsp:PolicyReference URI="#WSHttpBinding_IAuscultationService_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetEndPoint">
+      <soap12:operation soapAction="http://tempuri.org/IAuscultationService/GetEndPoint" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert">
+      <soap12:operation soapAction="http://tempuri.org/IAuscultationService/Insert" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update">
+      <soap12:operation soapAction="http://tempuri.org/IAuscultationService/Update" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AccountCredentials">
+      <soap12:operation soapAction="http://tempuri.org/IAuscultationService/AccountCredentials" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStetInfo">
+      <soap12:operation soapAction="http://tempuri.org/IAuscultationService/UpdateStetInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFilePath">
+      <soap12:operation soapAction="http://tempuri.org/IAuscultationService/GetFilePath" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFilePath2">
+      <soap12:operation soapAction="http://tempuri.org/IAuscultationService/GetFilePath2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoot">
+      <soap12:operation soapAction="http://tempuri.org/IAuscultationService/GetRoot" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetData">
+      <soap12:operation soapAction="http://tempuri.org/IAuscultationService/GetData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteDataset">
+      <soap12:operation soapAction="http://tempuri.org/IAuscultationService/ExecuteDataset" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteNonQuery">
+      <soap12:operation soapAction="http://tempuri.org/IAuscultationService/ExecuteNonQuery" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteScalar">
+      <soap12:operation soapAction="http://tempuri.org/IAuscultationService/ExecuteScalar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFile">
+      <soap12:operation soapAction="http://tempuri.org/IAuscultationService/DeleteFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isExistFolder">
+      <soap12:operation soapAction="http://tempuri.org/IAuscultationService/isExistFolder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateFolder">
+      <soap12:operation soapAction="http://tempuri.org/IAuscultationService/CreateFolder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFolderFiles">
+      <soap12:operation soapAction="http://tempuri.org/IAuscultationService/GetFolderFiles" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFileLength">
+      <soap12:operation soapAction="http://tempuri.org/IAuscultationService/GetFileLength" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isExistFile">
+      <soap12:operation soapAction="http://tempuri.org/IAuscultationService/isExistFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpLoadFile">
+      <soap12:operation soapAction="http://tempuri.org/IAuscultationService/UpLoadFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DownLoadFile">
+      <soap12:operation soapAction="http://tempuri.org/IAuscultationService/DownLoadFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFilesInfo">
+      <soap12:operation soapAction="http://tempuri.org/IAuscultationService/GetFilesInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AuscultationService">
+    <wsdl:port name="WSHttpBinding_IAuscultationService" binding="tns:WSHttpBinding_IAuscultationService">
+      <soap12:address location="http://localhost/Query" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://localhost/Query</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Dns>localhost</Dns>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
