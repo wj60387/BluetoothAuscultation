@@ -1,0 +1,15 @@
+﻿在2016-11-08 19:21:06时刻
+捕捉到线程异常
+  System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 BluetoothAuscultation.Forms.FormTeaching.get_DgvTable() 位置 c:\Users\wanjian\Desktop\布迪亨听诊平台安装包\Auscultation\Auscultation\BluetoothAuscultation\Forms\FormTeaching.cs:行号 96
+   在 BluetoothAuscultation.Forms.FormTeaching.btnTeach_Click(Object sender, EventArgs e) 位置 c:\Users\wanjian\Desktop\布迪亨听诊平台安装包\Auscultation\Auscultation\BluetoothAuscultation\Forms\FormTeaching.cs:行号 110
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)

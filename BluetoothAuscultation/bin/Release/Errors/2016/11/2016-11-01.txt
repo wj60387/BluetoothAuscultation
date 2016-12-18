@@ -1,0 +1,17 @@
+﻿在2016-11-01 02:07:18时刻
+捕捉到线程异常
+  System.IO.IOException: 文件“C:\Users\wanjian\Desktop\布迪亨听诊平台安装包\Auscultation\Auscultation\BluetoothAuscultation\bin\Release\Enclosure\Down\a524b8fb-dcb2-45b0-b1c7-0fe7458f6a91\194725g00q0okik6bzqq6b.png”正由另一进程使用，因此该进程无法访问该文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.Delete(String path)
+   在 BluetoothAuscultation.Forms.FormCloud.dgv_ShareMe_CellContentClick(Object sender, DataGridViewCellEventArgs e) 位置 c:\Users\wanjian\Desktop\布迪亨听诊平台安装包\Auscultation\Auscultation\BluetoothAuscultation\Forms\FormCloud.cs:行号 584
+   在 System.Windows.Forms.DataGridView.OnCellContentClick(DataGridViewCellEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnCommonCellContentClick(Int32 columnIndex, Int32 rowIndex, Boolean doubleClick)
+   在 System.Windows.Forms.DataGridViewCell.OnMouseUpInternal(DataGridViewCellMouseEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnCellMouseUp(DataGridViewCellMouseEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnMouseUp(MouseEventArgs e)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.DataGridView.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)

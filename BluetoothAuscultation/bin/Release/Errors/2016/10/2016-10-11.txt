@@ -1,0 +1,11 @@
+﻿在2016-10-11 09:04:11时刻
+捕捉到程序域范围内异常
+  System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: 值不能为空。
+参数名: parameters (错误详细信息等于 很可能由 IncludeExceptionDetailInFaults=true 创建的 ExceptionDetail，其值为:
+System.ArgumentNullException: 值不能为空。
+参数名: parameters
+   在 System.ServiceModel.Dispatcher.PrimitiveOperationFormatter.SerializeReply(MessageVersion messageVersion, Object[] parameters, Object result)
+   在 System.ServiceModel.Dispatcher.DispatchOperationRuntime.SerializeOutputs(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet))。

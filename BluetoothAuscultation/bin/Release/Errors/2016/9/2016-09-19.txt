@@ -1,0 +1,405 @@
+﻿在2016-09-19 06:17:16时刻
+捕捉到线程异常
+  System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: 索引(从零开始)必须大于或等于零，且小于参数列表的大小。 (错误详细信息等于 很可能由 IncludeExceptionDetailInFaults=true 创建的 ExceptionDetail，其值为:
+System.FormatException: 索引(从零开始)必须大于或等于零，且小于参数列表的大小。
+   在 System.Text.StringBuilder.AppendFormat(IFormatProvider provider, String format, Object[] args)
+   在 System.String.Format(IFormatProvider provider, String format, Object[] args)
+   在 AuscultationService.AuscultationService.GetEndPoint()
+   在 SyncInvokeGetEndPoint(Object , Object[] , Object[] )
+   在 System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs)
+   在 System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet))。在2016-09-19 06:18:07时刻
+捕捉到线程异常
+  System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: 索引(从零开始)必须大于或等于零，且小于参数列表的大小。 (错误详细信息等于 很可能由 IncludeExceptionDetailInFaults=true 创建的 ExceptionDetail，其值为:
+System.FormatException: 索引(从零开始)必须大于或等于零，且小于参数列表的大小。
+   在 System.Text.StringBuilder.AppendFormat(IFormatProvider provider, String format, Object[] args)
+   在 System.String.Format(IFormatProvider provider, String format, Object[] args)
+   在 AuscultationService.AuscultationService.GetEndPoint()
+   在 SyncInvokeGetEndPoint(Object , Object[] , Object[] )
+   在 System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs)
+   在 System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet))。在2016-09-19 13:39:13时刻
+捕捉到线程异常
+  System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: 值不能为空。
+参数名: parameters (错误详细信息等于 很可能由 IncludeExceptionDetailInFaults=true 创建的 ExceptionDetail，其值为:
+System.ArgumentNullException: 值不能为空。
+参数名: parameters
+   在 System.ServiceModel.Dispatcher.OperationFormatter.SerializeReply(MessageVersion messageVersion, Object[] parameters, Object result)
+   在 System.ServiceModel.Dispatcher.DispatchOperationRuntime.SerializeOutputs(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet))。在2016-09-19 13:39:47时刻
+捕捉到线程异常
+  System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: 值不能为空。
+参数名: parameters (错误详细信息等于 很可能由 IncludeExceptionDetailInFaults=true 创建的 ExceptionDetail，其值为:
+System.ArgumentNullException: 值不能为空。
+参数名: parameters
+   在 System.ServiceModel.Dispatcher.OperationFormatter.SerializeReply(MessageVersion messageVersion, Object[] parameters, Object result)
+   在 System.ServiceModel.Dispatcher.DispatchOperationRuntime.SerializeOutputs(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet))。在2016-09-19 13:40:01时刻
+捕捉到线程异常
+  System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: 值不能为空。
+参数名: parameters (错误详细信息等于 很可能由 IncludeExceptionDetailInFaults=true 创建的 ExceptionDetail，其值为:
+System.ArgumentNullException: 值不能为空。
+参数名: parameters
+   在 System.ServiceModel.Dispatcher.OperationFormatter.SerializeReply(MessageVersion messageVersion, Object[] parameters, Object result)
+   在 System.ServiceModel.Dispatcher.DispatchOperationRuntime.SerializeOutputs(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet))。在2016-09-19 13:40:11时刻
+捕捉到程序域范围内异常
+  System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: 值不能为空。
+参数名: parameters (错误详细信息等于 很可能由 IncludeExceptionDetailInFaults=true 创建的 ExceptionDetail，其值为:
+System.ArgumentNullException: 值不能为空。
+参数名: parameters
+   在 System.ServiceModel.Dispatcher.OperationFormatter.SerializeReply(MessageVersion messageVersion, Object[] parameters, Object result)
+   在 System.ServiceModel.Dispatcher.DispatchOperationRuntime.SerializeOutputs(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet))。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle._InvokeMethodFast(Object target, Object[] arguments, SignatureStruct& sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)
+   在 System.RuntimeMethodHandle.InvokeMethodFast(Object target, Object[] arguments, Signature sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture, Boolean skipVisibilityChecks)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 BluetoothAuscultation.Forms.FormMain.SuperSocket_DataReceived(Object sender, DataReceivedEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormMain.cs:行号 92
+   在 BluetoothAuscultation.Commucation.SupSocket.webSocket_DataReceived(Object sender, DataReceivedEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Commucation\SupSocket.cs:行号 56
+   在 WebSocket4Net.WebSocket.FireDataReceived(Byte[] data)
+   在 WebSocket4Net.Command.Binary.ExecuteCommand(WebSocket session, WebSocketCommandInfo commandInfo)
+   在 WebSocket4Net.WebSocket.ExecuteCommand(WebSocketCommandInfo commandInfo)
+   在 WebSocket4Net.WebSocket.OnDataReceived(Byte[] data, Int32 offset, Int32 length)
+   在 WebSocket4Net.WebSocket.client_DataReceived(Object sender, DataEventArgs e)
+   在 SuperSocket.ClientEngine.ClientSession.OnDataReceived(Byte[] data, Int32 offset, Int32 length)
+   在 SuperSocket.ClientEngine.AsyncTcpSession.ProcessReceive(SocketAsyncEventArgs e)
+   在 SuperSocket.ClientEngine.AsyncTcpSession.SocketEventArgsCompleted(Object sender, SocketAsyncEventArgs e)
+   在 System.Net.Sockets.SocketAsyncEventArgs.OnCompleted(SocketAsyncEventArgs e)
+   在 System.Net.Sockets.SocketAsyncEventArgs.ExecutionCallback(Object ignored)
+   在 System.Threading.ExecutionContext.runTryCode(Object userData)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Net.Sockets.SocketAsyncEventArgs.FinishOperationSuccess(SocketError socketError, Int32 bytesTransferred, SocketFlags flags)
+   在 System.Net.Sockets.SocketAsyncEventArgs.CompletionPortCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* nativeOverlapped)
+   在 System.Threading._IOCompletionCallback.PerformIOCompletionCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* pOVERLAP)在2016-09-19 13:41:31时刻
+捕捉到程序域范围内异常
+  System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: 值不能为空。
+参数名: parameters (错误详细信息等于 很可能由 IncludeExceptionDetailInFaults=true 创建的 ExceptionDetail，其值为:
+System.ArgumentNullException: 值不能为空。
+参数名: parameters
+   在 System.ServiceModel.Dispatcher.OperationFormatter.SerializeReply(MessageVersion messageVersion, Object[] parameters, Object result)
+   在 System.ServiceModel.Dispatcher.DispatchOperationRuntime.SerializeOutputs(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet))。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle._InvokeMethodFast(Object target, Object[] arguments, SignatureStruct& sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)
+   在 System.RuntimeMethodHandle.InvokeMethodFast(Object target, Object[] arguments, Signature sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture, Boolean skipVisibilityChecks)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 BluetoothAuscultation.Forms.FormMain.SuperSocket_DataReceived(Object sender, DataReceivedEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormMain.cs:行号 92
+   在 BluetoothAuscultation.Commucation.SupSocket.webSocket_DataReceived(Object sender, DataReceivedEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Commucation\SupSocket.cs:行号 56
+   在 WebSocket4Net.WebSocket.FireDataReceived(Byte[] data)
+   在 WebSocket4Net.Command.Binary.ExecuteCommand(WebSocket session, WebSocketCommandInfo commandInfo)
+   在 WebSocket4Net.WebSocket.ExecuteCommand(WebSocketCommandInfo commandInfo)
+   在 WebSocket4Net.WebSocket.OnDataReceived(Byte[] data, Int32 offset, Int32 length)
+   在 WebSocket4Net.WebSocket.client_DataReceived(Object sender, DataEventArgs e)
+   在 SuperSocket.ClientEngine.ClientSession.OnDataReceived(Byte[] data, Int32 offset, Int32 length)
+   在 SuperSocket.ClientEngine.AsyncTcpSession.ProcessReceive(SocketAsyncEventArgs e)
+   在 SuperSocket.ClientEngine.AsyncTcpSession.SocketEventArgsCompleted(Object sender, SocketAsyncEventArgs e)
+   在 System.Net.Sockets.SocketAsyncEventArgs.OnCompleted(SocketAsyncEventArgs e)
+   在 System.Net.Sockets.SocketAsyncEventArgs.ExecutionCallback(Object ignored)
+   在 System.Threading.ExecutionContext.runTryCode(Object userData)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Net.Sockets.SocketAsyncEventArgs.FinishOperationSuccess(SocketError socketError, Int32 bytesTransferred, SocketFlags flags)
+   在 System.Net.Sockets.SocketAsyncEventArgs.CompletionPortCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* nativeOverlapped)
+   在 System.Threading._IOCompletionCallback.PerformIOCompletionCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* pOVERLAP)在2016-09-19 13:42:06时刻
+捕捉到程序域范围内异常
+  System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: 值不能为空。
+参数名: parameters (错误详细信息等于 很可能由 IncludeExceptionDetailInFaults=true 创建的 ExceptionDetail，其值为:
+System.ArgumentNullException: 值不能为空。
+参数名: parameters
+   在 System.ServiceModel.Dispatcher.OperationFormatter.SerializeReply(MessageVersion messageVersion, Object[] parameters, Object result)
+   在 System.ServiceModel.Dispatcher.DispatchOperationRuntime.SerializeOutputs(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet))。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle._InvokeMethodFast(Object target, Object[] arguments, SignatureStruct& sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)
+   在 System.RuntimeMethodHandle.InvokeMethodFast(Object target, Object[] arguments, Signature sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture, Boolean skipVisibilityChecks)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 BluetoothAuscultation.Forms.FormMain.SuperSocket_DataReceived(Object sender, DataReceivedEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormMain.cs:行号 92
+   在 BluetoothAuscultation.Commucation.SupSocket.webSocket_DataReceived(Object sender, DataReceivedEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Commucation\SupSocket.cs:行号 56
+   在 WebSocket4Net.WebSocket.FireDataReceived(Byte[] data)
+   在 WebSocket4Net.Command.Binary.ExecuteCommand(WebSocket session, WebSocketCommandInfo commandInfo)
+   在 WebSocket4Net.WebSocket.ExecuteCommand(WebSocketCommandInfo commandInfo)
+   在 WebSocket4Net.WebSocket.OnDataReceived(Byte[] data, Int32 offset, Int32 length)
+   在 WebSocket4Net.WebSocket.client_DataReceived(Object sender, DataEventArgs e)
+   在 SuperSocket.ClientEngine.ClientSession.OnDataReceived(Byte[] data, Int32 offset, Int32 length)
+   在 SuperSocket.ClientEngine.AsyncTcpSession.ProcessReceive(SocketAsyncEventArgs e)
+   在 SuperSocket.ClientEngine.AsyncTcpSession.SocketEventArgsCompleted(Object sender, SocketAsyncEventArgs e)
+   在 System.Net.Sockets.SocketAsyncEventArgs.OnCompleted(SocketAsyncEventArgs e)
+   在 System.Net.Sockets.SocketAsyncEventArgs.ExecutionCallback(Object ignored)
+   在 System.Threading.ExecutionContext.runTryCode(Object userData)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Net.Sockets.SocketAsyncEventArgs.FinishOperationSuccess(SocketError socketError, Int32 bytesTransferred, SocketFlags flags)
+   在 System.Net.Sockets.SocketAsyncEventArgs.CompletionPortCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* nativeOverlapped)
+   在 System.Threading._IOCompletionCallback.PerformIOCompletionCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* pOVERLAP)在2016-09-19 13:48:15时刻
+捕捉到程序域范围内异常
+  System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: 值不能为空。
+参数名: parameters (错误详细信息等于 很可能由 IncludeExceptionDetailInFaults=true 创建的 ExceptionDetail，其值为:
+System.ArgumentNullException: 值不能为空。
+参数名: parameters
+   在 System.ServiceModel.Dispatcher.OperationFormatter.SerializeReply(MessageVersion messageVersion, Object[] parameters, Object result)
+   在 System.ServiceModel.Dispatcher.DispatchOperationRuntime.SerializeOutputs(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet))。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle._InvokeMethodFast(Object target, Object[] arguments, SignatureStruct& sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)
+   在 System.RuntimeMethodHandle.InvokeMethodFast(Object target, Object[] arguments, Signature sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture, Boolean skipVisibilityChecks)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 BluetoothAuscultation.Forms.FormMain.SuperSocket_DataReceived(Object sender, DataReceivedEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormMain.cs:行号 92
+   在 BluetoothAuscultation.Commucation.SupSocket.webSocket_DataReceived(Object sender, DataReceivedEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Commucation\SupSocket.cs:行号 56
+   在 WebSocket4Net.WebSocket.FireDataReceived(Byte[] data)
+   在 WebSocket4Net.Command.Binary.ExecuteCommand(WebSocket session, WebSocketCommandInfo commandInfo)
+   在 WebSocket4Net.WebSocket.ExecuteCommand(WebSocketCommandInfo commandInfo)
+   在 WebSocket4Net.WebSocket.OnDataReceived(Byte[] data, Int32 offset, Int32 length)
+   在 WebSocket4Net.WebSocket.client_DataReceived(Object sender, DataEventArgs e)
+   在 SuperSocket.ClientEngine.ClientSession.OnDataReceived(Byte[] data, Int32 offset, Int32 length)
+   在 SuperSocket.ClientEngine.AsyncTcpSession.ProcessReceive(SocketAsyncEventArgs e)
+   在 SuperSocket.ClientEngine.AsyncTcpSession.SocketEventArgsCompleted(Object sender, SocketAsyncEventArgs e)
+   在 System.Net.Sockets.SocketAsyncEventArgs.OnCompleted(SocketAsyncEventArgs e)
+   在 System.Net.Sockets.SocketAsyncEventArgs.ExecutionCallback(Object ignored)
+   在 System.Threading.ExecutionContext.runTryCode(Object userData)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Net.Sockets.SocketAsyncEventArgs.FinishOperationSuccess(SocketError socketError, Int32 bytesTransferred, SocketFlags flags)
+   在 System.Net.Sockets.SocketAsyncEventArgs.CompletionPortCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* nativeOverlapped)
+   在 System.Threading._IOCompletionCallback.PerformIOCompletionCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* pOVERLAP)在2016-09-19 13:49:14时刻
+捕捉到线程异常
+  System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: 值不能为空。
+参数名: parameters (错误详细信息等于 很可能由 IncludeExceptionDetailInFaults=true 创建的 ExceptionDetail，其值为:
+System.ArgumentNullException: 值不能为空。
+参数名: parameters
+   在 System.ServiceModel.Dispatcher.OperationFormatter.SerializeReply(MessageVersion messageVersion, Object[] parameters, Object result)
+   在 System.ServiceModel.Dispatcher.DispatchOperationRuntime.SerializeOutputs(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet))。在2016-09-19 13:49:21时刻
+捕捉到程序域范围内异常
+  System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: 值不能为空。
+参数名: parameters (错误详细信息等于 很可能由 IncludeExceptionDetailInFaults=true 创建的 ExceptionDetail，其值为:
+System.ArgumentNullException: 值不能为空。
+参数名: parameters
+   在 System.ServiceModel.Dispatcher.OperationFormatter.SerializeReply(MessageVersion messageVersion, Object[] parameters, Object result)
+   在 System.ServiceModel.Dispatcher.DispatchOperationRuntime.SerializeOutputs(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet))。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle._InvokeMethodFast(Object target, Object[] arguments, SignatureStruct& sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)
+   在 System.RuntimeMethodHandle.InvokeMethodFast(Object target, Object[] arguments, Signature sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture, Boolean skipVisibilityChecks)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 BluetoothAuscultation.Forms.FormMain.SuperSocket_DataReceived(Object sender, DataReceivedEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormMain.cs:行号 92
+   在 BluetoothAuscultation.Commucation.SupSocket.webSocket_DataReceived(Object sender, DataReceivedEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Commucation\SupSocket.cs:行号 56
+   在 WebSocket4Net.WebSocket.FireDataReceived(Byte[] data)
+   在 WebSocket4Net.Command.Binary.ExecuteCommand(WebSocket session, WebSocketCommandInfo commandInfo)
+   在 WebSocket4Net.WebSocket.ExecuteCommand(WebSocketCommandInfo commandInfo)
+   在 WebSocket4Net.WebSocket.OnDataReceived(Byte[] data, Int32 offset, Int32 length)
+   在 WebSocket4Net.WebSocket.client_DataReceived(Object sender, DataEventArgs e)
+   在 SuperSocket.ClientEngine.ClientSession.OnDataReceived(Byte[] data, Int32 offset, Int32 length)
+   在 SuperSocket.ClientEngine.AsyncTcpSession.ProcessReceive(SocketAsyncEventArgs e)
+   在 SuperSocket.ClientEngine.AsyncTcpSession.SocketEventArgsCompleted(Object sender, SocketAsyncEventArgs e)
+   在 System.Net.Sockets.SocketAsyncEventArgs.OnCompleted(SocketAsyncEventArgs e)
+   在 System.Net.Sockets.SocketAsyncEventArgs.ExecutionCallback(Object ignored)
+   在 System.Threading.ExecutionContext.runTryCode(Object userData)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Net.Sockets.SocketAsyncEventArgs.FinishOperationSuccess(SocketError socketError, Int32 bytesTransferred, SocketFlags flags)
+   在 System.Net.Sockets.SocketAsyncEventArgs.CompletionPortCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* nativeOverlapped)
+   在 System.Threading._IOCompletionCallback.PerformIOCompletionCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* pOVERLAP)在2016-09-19 13:50:43时刻
+捕捉到程序域范围内异常
+  System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Net.WebException: 操作超时
+   在 System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   在 System.Windows.Forms.Control.Invoke(Delegate method, Object[] args)
+   在 System.Windows.Forms.Control.Invoke(Delegate method)
+   在 BluetoothAuscultation.Forms.FormRemoteAuscultation.HandleMessage(RequestRemoteAuscultateCode message) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormRemoteAuscultation.cs:行号 187
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle._InvokeMethodFast(Object target, Object[] arguments, SignatureStruct& sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)
+   在 System.RuntimeMethodHandle.InvokeMethodFast(Object target, Object[] arguments, Signature sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture, Boolean skipVisibilityChecks)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 BluetoothAuscultation.Forms.FormMain.SuperSocket_DataReceived(Object sender, DataReceivedEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormMain.cs:行号 92
+   在 BluetoothAuscultation.Commucation.SupSocket.webSocket_DataReceived(Object sender, DataReceivedEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Commucation\SupSocket.cs:行号 56
+   在 WebSocket4Net.WebSocket.FireDataReceived(Byte[] data)
+   在 WebSocket4Net.Command.Binary.ExecuteCommand(WebSocket session, WebSocketCommandInfo commandInfo)
+   在 WebSocket4Net.WebSocket.ExecuteCommand(WebSocketCommandInfo commandInfo)
+   在 WebSocket4Net.WebSocket.OnDataReceived(Byte[] data, Int32 offset, Int32 length)
+   在 WebSocket4Net.WebSocket.client_DataReceived(Object sender, DataEventArgs e)
+   在 SuperSocket.ClientEngine.ClientSession.OnDataReceived(Byte[] data, Int32 offset, Int32 length)
+   在 SuperSocket.ClientEngine.AsyncTcpSession.ProcessReceive(SocketAsyncEventArgs e)
+   在 SuperSocket.ClientEngine.AsyncTcpSession.SocketEventArgsCompleted(Object sender, SocketAsyncEventArgs e)
+   在 System.Net.Sockets.SocketAsyncEventArgs.OnCompleted(SocketAsyncEventArgs e)
+   在 System.Net.Sockets.SocketAsyncEventArgs.ExecutionCallback(Object ignored)
+   在 System.Threading.ExecutionContext.runTryCode(Object userData)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Net.Sockets.SocketAsyncEventArgs.FinishOperationSuccess(SocketError socketError, Int32 bytesTransferred, SocketFlags flags)
+   在 System.Net.Sockets.SocketAsyncEventArgs.CompletionPortCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* nativeOverlapped)
+   在 System.Threading._IOCompletionCallback.PerformIOCompletionCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* pOVERLAP)在2016-09-19 13:52:02时刻
+捕捉到程序域范围内异常
+  System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: 值不能为空。
+参数名: parameters (错误详细信息等于 很可能由 IncludeExceptionDetailInFaults=true 创建的 ExceptionDetail，其值为:
+System.ArgumentNullException: 值不能为空。
+参数名: parameters
+   在 System.ServiceModel.Dispatcher.OperationFormatter.SerializeReply(MessageVersion messageVersion, Object[] parameters, Object result)
+   在 System.ServiceModel.Dispatcher.DispatchOperationRuntime.SerializeOutputs(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet))。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle._InvokeMethodFast(Object target, Object[] arguments, SignatureStruct& sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)
+   在 System.RuntimeMethodHandle.InvokeMethodFast(Object target, Object[] arguments, Signature sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture, Boolean skipVisibilityChecks)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 BluetoothAuscultation.Forms.FormMain.SuperSocket_DataReceived(Object sender, DataReceivedEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormMain.cs:行号 92
+   在 BluetoothAuscultation.Commucation.SupSocket.webSocket_DataReceived(Object sender, DataReceivedEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Commucation\SupSocket.cs:行号 56
+   在 WebSocket4Net.WebSocket.FireDataReceived(Byte[] data)
+   在 WebSocket4Net.Command.Binary.ExecuteCommand(WebSocket session, WebSocketCommandInfo commandInfo)
+   在 WebSocket4Net.WebSocket.ExecuteCommand(WebSocketCommandInfo commandInfo)
+   在 WebSocket4Net.WebSocket.OnDataReceived(Byte[] data, Int32 offset, Int32 length)
+   在 WebSocket4Net.WebSocket.client_DataReceived(Object sender, DataEventArgs e)
+   在 SuperSocket.ClientEngine.ClientSession.OnDataReceived(Byte[] data, Int32 offset, Int32 length)
+   在 SuperSocket.ClientEngine.AsyncTcpSession.ProcessReceive(SocketAsyncEventArgs e)
+   在 SuperSocket.ClientEngine.AsyncTcpSession.SocketEventArgsCompleted(Object sender, SocketAsyncEventArgs e)
+   在 System.Net.Sockets.SocketAsyncEventArgs.OnCompleted(SocketAsyncEventArgs e)
+   在 System.Net.Sockets.SocketAsyncEventArgs.ExecutionCallback(Object ignored)
+   在 System.Threading.ExecutionContext.runTryCode(Object userData)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Net.Sockets.SocketAsyncEventArgs.FinishOperationSuccess(SocketError socketError, Int32 bytesTransferred, SocketFlags flags)
+   在 System.Net.Sockets.SocketAsyncEventArgs.CompletionPortCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* nativeOverlapped)
+   在 System.Threading._IOCompletionCallback.PerformIOCompletionCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* pOVERLAP)在2016-09-19 13:53:20时刻
+捕捉到程序域范围内异常
+  System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Net.Sockets.SocketException: 远程主机强迫关闭了一个现有的连接。
+   在 System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   在 System.Windows.Forms.Control.Invoke(Delegate method, Object[] args)
+   在 System.Windows.Forms.Control.Invoke(Delegate method)
+   在 BluetoothAuscultation.Forms.FormRemoteAuscultation.HandleMessage(RequestRemoteAuscultateCode message) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormRemoteAuscultation.cs:行号 187
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle._InvokeMethodFast(Object target, Object[] arguments, SignatureStruct& sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)
+   在 System.RuntimeMethodHandle.InvokeMethodFast(Object target, Object[] arguments, Signature sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture, Boolean skipVisibilityChecks)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 BluetoothAuscultation.Forms.FormMain.SuperSocket_DataReceived(Object sender, DataReceivedEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormMain.cs:行号 92
+   在 BluetoothAuscultation.Commucation.SupSocket.webSocket_DataReceived(Object sender, DataReceivedEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Commucation\SupSocket.cs:行号 56
+   在 WebSocket4Net.WebSocket.FireDataReceived(Byte[] data)
+   在 WebSocket4Net.Command.Binary.ExecuteCommand(WebSocket session, WebSocketCommandInfo commandInfo)
+   在 WebSocket4Net.WebSocket.ExecuteCommand(WebSocketCommandInfo commandInfo)
+   在 WebSocket4Net.WebSocket.OnDataReceived(Byte[] data, Int32 offset, Int32 length)
+   在 WebSocket4Net.WebSocket.client_DataReceived(Object sender, DataEventArgs e)
+   在 SuperSocket.ClientEngine.ClientSession.OnDataReceived(Byte[] data, Int32 offset, Int32 length)
+   在 SuperSocket.ClientEngine.AsyncTcpSession.ProcessReceive(SocketAsyncEventArgs e)
+   在 SuperSocket.ClientEngine.AsyncTcpSession.SocketEventArgsCompleted(Object sender, SocketAsyncEventArgs e)
+   在 System.Net.Sockets.SocketAsyncEventArgs.OnCompleted(SocketAsyncEventArgs e)
+   在 System.Net.Sockets.SocketAsyncEventArgs.ExecutionCallback(Object ignored)
+   在 System.Threading.ExecutionContext.runTryCode(Object userData)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Net.Sockets.SocketAsyncEventArgs.FinishOperationSuccess(SocketError socketError, Int32 bytesTransferred, SocketFlags flags)
+   在 System.Net.Sockets.SocketAsyncEventArgs.CompletionPortCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* nativeOverlapped)
+   在 System.Threading._IOCompletionCallback.PerformIOCompletionCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* pOVERLAP)在2016-09-19 13:55:03时刻
+捕捉到线程异常
+  System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: 访问权限异常... (错误详细信息等于 很可能由 IncludeExceptionDetailInFaults=true 创建的 ExceptionDetail，其值为:
+System.Exception: 访问权限异常...
+   在 RecordInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs) 位置 d:\WorkSpace\VS2010\WebSocket\superwebsocket\Server\Filter\RecordInvoker.cs:行号 102
+   在 System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet))。在2016-09-19 13:55:18时刻
+捕捉到程序域范围内异常
+  System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: 访问权限异常... (错误详细信息等于 很可能由 IncludeExceptionDetailInFaults=true 创建的 ExceptionDetail，其值为:
+System.Exception: 访问权限异常...
+   在 RecordInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs) 位置 d:\WorkSpace\VS2010\WebSocket\superwebsocket\Server\Filter\RecordInvoker.cs:行号 102
+   在 System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet))。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle._InvokeMethodFast(Object target, Object[] arguments, SignatureStruct& sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)
+   在 System.RuntimeMethodHandle.InvokeMethodFast(Object target, Object[] arguments, Signature sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture, Boolean skipVisibilityChecks)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 BluetoothAuscultation.Forms.FormMain.SuperSocket_DataReceived(Object sender, DataReceivedEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormMain.cs:行号 92
+   在 BluetoothAuscultation.Commucation.SupSocket.webSocket_DataReceived(Object sender, DataReceivedEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Commucation\SupSocket.cs:行号 56
+   在 WebSocket4Net.WebSocket.FireDataReceived(Byte[] data)
+   在 WebSocket4Net.Command.Binary.ExecuteCommand(WebSocket session, WebSocketCommandInfo commandInfo)
+   在 WebSocket4Net.WebSocket.ExecuteCommand(WebSocketCommandInfo commandInfo)
+   在 WebSocket4Net.WebSocket.OnDataReceived(Byte[] data, Int32 offset, Int32 length)
+   在 WebSocket4Net.WebSocket.client_DataReceived(Object sender, DataEventArgs e)
+   在 SuperSocket.ClientEngine.ClientSession.OnDataReceived(Byte[] data, Int32 offset, Int32 length)
+   在 SuperSocket.ClientEngine.AsyncTcpSession.ProcessReceive(SocketAsyncEventArgs e)
+   在 SuperSocket.ClientEngine.AsyncTcpSession.SocketEventArgsCompleted(Object sender, SocketAsyncEventArgs e)
+   在 System.Net.Sockets.SocketAsyncEventArgs.OnCompleted(SocketAsyncEventArgs e)
+   在 System.Net.Sockets.SocketAsyncEventArgs.ExecutionCallback(Object ignored)
+   在 System.Threading.ExecutionContext.runTryCode(Object userData)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Net.Sockets.SocketAsyncEventArgs.FinishOperationSuccess(SocketError socketError, Int32 bytesTransferred, SocketFlags flags)
+   在 System.Net.Sockets.SocketAsyncEventArgs.CompletionPortCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* nativeOverlapped)
+   在 System.Threading._IOCompletionCallback.PerformIOCompletionCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* pOVERLAP)在2016-09-19 13:55:32时刻
+捕捉到程序域范围内异常
+  System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Net.Sockets.SocketException: 远程主机强迫关闭了一个现有的连接。
+   在 System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   在 System.Windows.Forms.Control.Invoke(Delegate method, Object[] args)
+   在 System.Windows.Forms.Control.Invoke(Delegate method)
+   在 BluetoothAuscultation.Forms.FormRemoteAuscultation.HandleMessage(RequestRemoteAuscultateCode message) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormRemoteAuscultation.cs:行号 187
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle._InvokeMethodFast(Object target, Object[] arguments, SignatureStruct& sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)
+   在 System.RuntimeMethodHandle.InvokeMethodFast(Object target, Object[] arguments, Signature sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture, Boolean skipVisibilityChecks)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 BluetoothAuscultation.Forms.FormMain.SuperSocket_DataReceived(Object sender, DataReceivedEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormMain.cs:行号 92
+   在 BluetoothAuscultation.Commucation.SupSocket.webSocket_DataReceived(Object sender, DataReceivedEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Commucation\SupSocket.cs:行号 56
+   在 WebSocket4Net.WebSocket.FireDataReceived(Byte[] data)
+   在 WebSocket4Net.Command.Binary.ExecuteCommand(WebSocket session, WebSocketCommandInfo commandInfo)
+   在 WebSocket4Net.WebSocket.ExecuteCommand(WebSocketCommandInfo commandInfo)
+   在 WebSocket4Net.WebSocket.OnDataReceived(Byte[] data, Int32 offset, Int32 length)
+   在 WebSocket4Net.WebSocket.client_DataReceived(Object sender, DataEventArgs e)
+   在 SuperSocket.ClientEngine.ClientSession.OnDataReceived(Byte[] data, Int32 offset, Int32 length)
+   在 SuperSocket.ClientEngine.AsyncTcpSession.ProcessReceive(SocketAsyncEventArgs e)
+   在 SuperSocket.ClientEngine.AsyncTcpSession.SocketEventArgsCompleted(Object sender, SocketAsyncEventArgs e)
+   在 System.Net.Sockets.SocketAsyncEventArgs.OnCompleted(SocketAsyncEventArgs e)
+   在 System.Net.Sockets.SocketAsyncEventArgs.ExecutionCallback(Object ignored)
+   在 System.Threading.ExecutionContext.runTryCode(Object userData)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Net.Sockets.SocketAsyncEventArgs.FinishOperationSuccess(SocketError socketError, Int32 bytesTransferred, SocketFlags flags)
+   在 System.Net.Sockets.SocketAsyncEventArgs.CompletionPortCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* nativeOverlapped)
+   在 System.Threading._IOCompletionCallback.PerformIOCompletionCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* pOVERLAP)

@@ -1,0 +1,320 @@
+﻿在2016-09-23 00:49:15时刻
+捕捉到线程异常
+  System.ArgumentException: 未能找到名为 UploadFlag 的列。
+参数名: columnName
+   在 System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   在 BluetoothAuscultation.Forms.FormEducation.dgvLocal_CellContentClick(Object sender, DataGridViewCellEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 379
+   在 System.Windows.Forms.DataGridView.OnCellContentClick(DataGridViewCellEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnCommonCellContentClick(Int32 columnIndex, Int32 rowIndex, Boolean doubleClick)
+   在 System.Windows.Forms.DataGridViewCell.OnMouseUpInternal(DataGridViewCellMouseEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnCellMouseUp(DataGridViewCellMouseEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnMouseUp(MouseEventArgs e)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.DataGridView.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)在2016-09-23 00:49:24时刻
+捕捉到线程异常
+  System.ArgumentException: 未能找到名为 UploadFlag 的列。
+参数名: columnName
+   在 System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   在 BluetoothAuscultation.Forms.FormEducation.dgvLocal_CellContentClick(Object sender, DataGridViewCellEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 379
+   在 System.Windows.Forms.DataGridView.OnCellContentClick(DataGridViewCellEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnCommonCellContentClick(Int32 columnIndex, Int32 rowIndex, Boolean doubleClick)
+   在 System.Windows.Forms.DataGridViewCell.OnMouseUpInternal(DataGridViewCellMouseEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnCellMouseUp(DataGridViewCellMouseEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnMouseUp(MouseEventArgs e)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.DataGridView.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)在2016-09-23 00:49:57时刻
+捕捉到线程异常
+  System.ArgumentException: 未能找到名为 UploadFlag 的列。
+参数名: columnName
+   在 System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   在 BluetoothAuscultation.Forms.FormEducation.dgvLocal_CellContentClick(Object sender, DataGridViewCellEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 379
+   在 System.Windows.Forms.DataGridView.OnCellContentClick(DataGridViewCellEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnCommonCellContentClick(Int32 columnIndex, Int32 rowIndex, Boolean doubleClick)
+   在 System.Windows.Forms.DataGridViewCell.OnMouseUpInternal(DataGridViewCellMouseEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnCellMouseUp(DataGridViewCellMouseEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnMouseUp(MouseEventArgs e)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.DataGridView.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)在2016-09-23 01:39:36时刻
+捕捉到线程异常
+  System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 BluetoothAuscultation.Forms.FormEducation.dgvLocal_SelectionChanged(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 712
+   在 System.Windows.Forms.DataGridView.OnSelectionChanged(EventArgs e)
+   在 System.Windows.Forms.DataGridView.FlushSelectionChanged()
+   在 System.Windows.Forms.DataGridView.set_NoSelectionChangeCount(Int32 value)
+   在 System.Windows.Forms.DataGridView.SetSelectedCellCoreInternal(Int32 columnIndex, Int32 rowIndex, Boolean selected)
+   在 System.Windows.Forms.DataGridViewCell.set_Selected(Boolean value)
+   在 BluetoothAuscultation.Forms.FormEducation.LoadLocalAudio() 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 285
+   在 BluetoothAuscultation.Forms.FormEducation.UpdateData(String stetName, String tabPageName) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 584
+   在 BluetoothAuscultation.Forms.FormEducation.cboStethoscope_SelectedIndexChanged(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 249
+   在 System.Windows.Forms.ComboBox.OnSelectedIndexChanged(EventArgs e)
+   在 System.Windows.Forms.ComboBox.set_SelectedIndex(Int32 value)
+   在 System.Windows.Forms.ComboBox.set_SelectedItem(Object value)
+   在 BluetoothAuscultation.Forms.FormEducation..ctor(String arg) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 37
+   在 BluetoothAuscultation.Forms.FormMain.OpenWindow(String formName, String[] args) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormMain.cs:行号 242
+   在 BluetoothAuscultation.Mediator.OpenWindow(String formName, String[] args) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Commmon.cs:行号 85
+   在 BluetoothAuscultation.Forms.FormMenu.treeView1_NodeMouseDoubleClick(Object sender, TreeNodeMouseClickEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormMenu.cs:行号 117
+   在 System.Windows.Forms.TreeView.OnNodeMouseDoubleClick(TreeNodeMouseClickEventArgs e)
+   在 System.Windows.Forms.TreeView.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)在2016-09-23 01:39:39时刻
+捕捉到线程异常
+  System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 BluetoothAuscultation.Forms.FormEducation.dgvLocal_SelectionChanged(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 712
+   在 System.Windows.Forms.DataGridView.OnSelectionChanged(EventArgs e)
+   在 System.Windows.Forms.DataGridView.FlushSelectionChanged()
+   在 System.Windows.Forms.DataGridView.set_NoSelectionChangeCount(Int32 value)
+   在 System.Windows.Forms.DataGridView.SetSelectedCellCoreInternal(Int32 columnIndex, Int32 rowIndex, Boolean selected)
+   在 System.Windows.Forms.DataGridViewCell.set_Selected(Boolean value)
+   在 BluetoothAuscultation.Forms.FormEducation.LoadLocalAudio() 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 285
+   在 BluetoothAuscultation.Forms.FormEducation.UpdateData(String stetName, String tabPageName) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 584
+   在 BluetoothAuscultation.Forms.FormEducation.cboStethoscope_SelectedIndexChanged(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 249
+   在 System.Windows.Forms.ComboBox.OnSelectedIndexChanged(EventArgs e)
+   在 System.Windows.Forms.ComboBox.set_SelectedIndex(Int32 value)
+   在 System.Windows.Forms.ComboBox.set_SelectedItem(Object value)
+   在 BluetoothAuscultation.Forms.FormEducation..ctor(String arg) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 37
+   在 BluetoothAuscultation.Forms.FormMain.OpenWindow(String formName, String[] args) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormMain.cs:行号 242
+   在 BluetoothAuscultation.Mediator.OpenWindow(String formName, String[] args) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Commmon.cs:行号 85
+   在 BluetoothAuscultation.Forms.FormMenu.treeView1_NodeMouseDoubleClick(Object sender, TreeNodeMouseClickEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormMenu.cs:行号 117
+   在 System.Windows.Forms.TreeView.OnNodeMouseDoubleClick(TreeNodeMouseClickEventArgs e)
+   在 System.Windows.Forms.TreeView.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)在2016-09-23 01:40:15时刻
+捕捉到线程异常
+  System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 BluetoothAuscultation.Forms.FormEducation.dgvLocal_SelectionChanged(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 712
+   在 System.Windows.Forms.DataGridView.OnSelectionChanged(EventArgs e)
+   在 System.Windows.Forms.DataGridView.FlushSelectionChanged()
+   在 System.Windows.Forms.DataGridView.set_NoSelectionChangeCount(Int32 value)
+   在 System.Windows.Forms.DataGridView.SetSelectedCellCoreInternal(Int32 columnIndex, Int32 rowIndex, Boolean selected)
+   在 System.Windows.Forms.DataGridViewCell.set_Selected(Boolean value)
+   在 BluetoothAuscultation.Forms.FormEducation.LoadLocalAudio() 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 285
+   在 BluetoothAuscultation.Forms.FormEducation.UpdateData(String stetName, String tabPageName) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 584
+   在 BluetoothAuscultation.Forms.FormEducation.cboStethoscope_SelectedIndexChanged(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 249
+   在 System.Windows.Forms.ComboBox.OnSelectedIndexChanged(EventArgs e)
+   在 System.Windows.Forms.ComboBox.set_SelectedIndex(Int32 value)
+   在 System.Windows.Forms.ComboBox.set_SelectedItem(Object value)
+   在 BluetoothAuscultation.Forms.FormEducation..ctor(String arg) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 37
+   在 BluetoothAuscultation.Forms.FormMain.OpenWindow(String formName, String[] args) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormMain.cs:行号 242
+   在 BluetoothAuscultation.Mediator.OpenWindow(String formName, String[] args) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Commmon.cs:行号 85
+   在 BluetoothAuscultation.Forms.FormMenu.treeView1_NodeMouseDoubleClick(Object sender, TreeNodeMouseClickEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormMenu.cs:行号 117
+   在 System.Windows.Forms.TreeView.OnNodeMouseDoubleClick(TreeNodeMouseClickEventArgs e)
+   在 System.Windows.Forms.TreeView.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)在2016-09-23 01:44:18时刻
+捕捉到线程异常
+  System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 BluetoothAuscultation.Forms.FormEducation.dgvLocal_SelectionChanged(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 709
+   在 System.Windows.Forms.DataGridView.OnSelectionChanged(EventArgs e)
+   在 System.Windows.Forms.DataGridView.FlushSelectionChanged()
+   在 System.Windows.Forms.DataGridView.set_NoSelectionChangeCount(Int32 value)
+   在 System.Windows.Forms.DataGridView.SetSelectedCellCoreInternal(Int32 columnIndex, Int32 rowIndex, Boolean selected)
+   在 System.Windows.Forms.DataGridViewCell.set_Selected(Boolean value)
+   在 BluetoothAuscultation.Forms.FormEducation.LoadLocalAudio() 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 282
+   在 BluetoothAuscultation.Forms.FormEducation.UpdateData(String stetName, String tabPageName) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 581
+   在 BluetoothAuscultation.Forms.FormEducation.cboStethoscope_SelectedIndexChanged(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 246
+   在 System.Windows.Forms.ComboBox.OnSelectedIndexChanged(EventArgs e)
+   在 System.Windows.Forms.ComboBox.set_SelectedIndex(Int32 value)
+   在 BluetoothAuscultation.Forms.FormEducation..ctor(String arg) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 34
+   在 BluetoothAuscultation.Forms.FormMain.OpenWindow(String formName, String[] args) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormMain.cs:行号 242
+   在 BluetoothAuscultation.Mediator.OpenWindow(String formName, String[] args) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Commmon.cs:行号 85
+   在 BluetoothAuscultation.Forms.FormMenu.treeView1_NodeMouseDoubleClick(Object sender, TreeNodeMouseClickEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormMenu.cs:行号 117
+   在 System.Windows.Forms.TreeView.OnNodeMouseDoubleClick(TreeNodeMouseClickEventArgs e)
+   在 System.Windows.Forms.TreeView.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)在2016-09-23 01:44:19时刻
+捕捉到线程异常
+  System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 BluetoothAuscultation.Forms.FormEducation.dgvLocal_SelectionChanged(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 709
+   在 System.Windows.Forms.DataGridView.OnSelectionChanged(EventArgs e)
+   在 System.Windows.Forms.DataGridView.FlushSelectionChanged()
+   在 System.Windows.Forms.DataGridView.set_NoSelectionChangeCount(Int32 value)
+   在 System.Windows.Forms.DataGridView.SetSelectedCellCoreInternal(Int32 columnIndex, Int32 rowIndex, Boolean selected)
+   在 System.Windows.Forms.DataGridViewCell.set_Selected(Boolean value)
+   在 BluetoothAuscultation.Forms.FormEducation.LoadLocalAudio() 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 282
+   在 BluetoothAuscultation.Forms.FormEducation.UpdateData(String stetName, String tabPageName) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 581
+   在 BluetoothAuscultation.Forms.FormEducation.cboStethoscope_SelectedIndexChanged(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 246
+   在 System.Windows.Forms.ComboBox.OnSelectedIndexChanged(EventArgs e)
+   在 System.Windows.Forms.ComboBox.set_SelectedIndex(Int32 value)
+   在 BluetoothAuscultation.Forms.FormEducation..ctor(String arg) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 34
+   在 BluetoothAuscultation.Forms.FormMain.OpenWindow(String formName, String[] args) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormMain.cs:行号 242
+   在 BluetoothAuscultation.Mediator.OpenWindow(String formName, String[] args) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Commmon.cs:行号 85
+   在 BluetoothAuscultation.Forms.FormMenu.treeView1_NodeMouseDoubleClick(Object sender, TreeNodeMouseClickEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormMenu.cs:行号 117
+   在 System.Windows.Forms.TreeView.OnNodeMouseDoubleClick(TreeNodeMouseClickEventArgs e)
+   在 System.Windows.Forms.TreeView.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)在2016-09-23 01:44:20时刻
+捕捉到线程异常
+  System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 BluetoothAuscultation.Forms.FormEducation.dgvLocal_SelectionChanged(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 709
+   在 System.Windows.Forms.DataGridView.OnSelectionChanged(EventArgs e)
+   在 System.Windows.Forms.DataGridView.FlushSelectionChanged()
+   在 System.Windows.Forms.DataGridView.set_NoSelectionChangeCount(Int32 value)
+   在 System.Windows.Forms.DataGridView.SetSelectedCellCoreInternal(Int32 columnIndex, Int32 rowIndex, Boolean selected)
+   在 System.Windows.Forms.DataGridViewCell.set_Selected(Boolean value)
+   在 BluetoothAuscultation.Forms.FormEducation.LoadLocalAudio() 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 282
+   在 BluetoothAuscultation.Forms.FormEducation.UpdateData(String stetName, String tabPageName) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 581
+   在 BluetoothAuscultation.Forms.FormEducation.cboStethoscope_SelectedIndexChanged(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 246
+   在 System.Windows.Forms.ComboBox.OnSelectedIndexChanged(EventArgs e)
+   在 System.Windows.Forms.ComboBox.set_SelectedIndex(Int32 value)
+   在 BluetoothAuscultation.Forms.FormEducation..ctor(String arg) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 34
+   在 BluetoothAuscultation.Forms.FormMain.OpenWindow(String formName, String[] args) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormMain.cs:行号 242
+   在 BluetoothAuscultation.Mediator.OpenWindow(String formName, String[] args) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Commmon.cs:行号 85
+   在 BluetoothAuscultation.Forms.FormMenu.treeView1_NodeMouseDoubleClick(Object sender, TreeNodeMouseClickEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormMenu.cs:行号 117
+   在 System.Windows.Forms.TreeView.OnNodeMouseDoubleClick(TreeNodeMouseClickEventArgs e)
+   在 System.Windows.Forms.TreeView.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)在2016-09-23 01:44:21时刻
+捕捉到线程异常
+  System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 BluetoothAuscultation.Forms.FormEducation.dgvLocal_SelectionChanged(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 709
+   在 System.Windows.Forms.DataGridView.OnSelectionChanged(EventArgs e)
+   在 System.Windows.Forms.DataGridView.FlushSelectionChanged()
+   在 System.Windows.Forms.DataGridView.set_NoSelectionChangeCount(Int32 value)
+   在 System.Windows.Forms.DataGridView.SetSelectedCellCoreInternal(Int32 columnIndex, Int32 rowIndex, Boolean selected)
+   在 System.Windows.Forms.DataGridViewCell.set_Selected(Boolean value)
+   在 BluetoothAuscultation.Forms.FormEducation.LoadLocalAudio() 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 282
+   在 BluetoothAuscultation.Forms.FormEducation.UpdateData(String stetName, String tabPageName) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 581
+   在 BluetoothAuscultation.Forms.FormEducation.cboStethoscope_SelectedIndexChanged(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 246
+   在 System.Windows.Forms.ComboBox.OnSelectedIndexChanged(EventArgs e)
+   在 System.Windows.Forms.ComboBox.set_SelectedIndex(Int32 value)
+   在 BluetoothAuscultation.Forms.FormEducation..ctor(String arg) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 34
+   在 BluetoothAuscultation.Forms.FormMain.OpenWindow(String formName, String[] args) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormMain.cs:行号 242
+   在 BluetoothAuscultation.Mediator.OpenWindow(String formName, String[] args) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Commmon.cs:行号 85
+   在 BluetoothAuscultation.Forms.FormMenu.treeView1_NodeMouseDoubleClick(Object sender, TreeNodeMouseClickEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormMenu.cs:行号 117
+   在 System.Windows.Forms.TreeView.OnNodeMouseDoubleClick(TreeNodeMouseClickEventArgs e)
+   在 System.Windows.Forms.TreeView.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)在2016-09-23 01:44:35时刻
+捕捉到线程异常
+  System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 BluetoothAuscultation.Forms.FormEducation.dgvLocal_SelectionChanged(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 709
+   在 System.Windows.Forms.DataGridView.OnSelectionChanged(EventArgs e)
+   在 System.Windows.Forms.DataGridView.FlushSelectionChanged()
+   在 System.Windows.Forms.DataGridView.set_NoSelectionChangeCount(Int32 value)
+   在 System.Windows.Forms.DataGridView.SetSelectedCellCoreInternal(Int32 columnIndex, Int32 rowIndex, Boolean selected)
+   在 System.Windows.Forms.DataGridViewCell.set_Selected(Boolean value)
+   在 BluetoothAuscultation.Forms.FormEducation.LoadLocalAudio() 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 282
+   在 BluetoothAuscultation.Forms.FormEducation.UpdateData(String stetName, String tabPageName) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 581
+   在 BluetoothAuscultation.Forms.FormEducation.cboStethoscope_SelectedIndexChanged(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 246
+   在 System.Windows.Forms.ComboBox.OnSelectedIndexChanged(EventArgs e)
+   在 System.Windows.Forms.ComboBox.set_SelectedIndex(Int32 value)
+   在 BluetoothAuscultation.Forms.FormEducation..ctor(String arg) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 34
+   在 BluetoothAuscultation.Forms.FormMain.OpenWindow(String formName, String[] args) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormMain.cs:行号 242
+   在 BluetoothAuscultation.Mediator.OpenWindow(String formName, String[] args) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Commmon.cs:行号 85
+   在 BluetoothAuscultation.Forms.FormMenu.treeView1_NodeMouseDoubleClick(Object sender, TreeNodeMouseClickEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormMenu.cs:行号 117
+   在 System.Windows.Forms.TreeView.OnNodeMouseDoubleClick(TreeNodeMouseClickEventArgs e)
+   在 System.Windows.Forms.TreeView.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)在2016-09-23 01:45:06时刻
+捕捉到线程异常
+  System.ArgumentOutOfRangeException: InvalidArgument=“0”的值对于“SelectedIndex”无效。
+参数名: SelectedIndex
+   在 System.Windows.Forms.ComboBox.set_SelectedIndex(Int32 value)
+   在 BluetoothAuscultation.Forms.FormEducation.FormEducation_Load(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 52
+   在 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   在 System.Windows.Forms.Form.OnCreateControl()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.ContainerControl.WndProc(Message& m)
+   在 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Form.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)在2016-09-23 03:29:25时刻
+捕捉到线程异常
+  System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 BluetoothAuscultation.Forms.FormEducation.dgv_DownLoad_SelectionChanged(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 760
+   在 System.Windows.Forms.DataGridView.OnSelectionChanged(EventArgs e)
+   在 System.Windows.Forms.DataGridView.FlushSelectionChanged()
+   在 System.Windows.Forms.DataGridView.OnRemovedRow_PostNotification(DataGridViewRow dataGridViewRow, Point newCurrentCell)
+   在 System.Windows.Forms.DataGridViewRowCollection.OnCollectionChanged_PostNotification(CollectionChangeAction cca, Int32 rowIndex, Int32 rowCount, DataGridViewRow dataGridViewRow, Boolean changeIsDeletion, Boolean changeIsInsertion, Boolean recreateNewRow, Point newCurrentCell)
+   在 System.Windows.Forms.DataGridViewRowCollection.OnCollectionChanged(CollectionChangeEventArgs e, Int32 rowIndex, Int32 rowCount, Boolean changeIsDeletion, Boolean changeIsInsertion, Boolean recreateNewRow, Point newCurrentCell)
+   在 System.Windows.Forms.DataGridViewRowCollection.RemoveAtInternal(Int32 index, Boolean force)
+   在 System.Windows.Forms.DataGridViewRowCollection.RemoveAt(Int32 index)
+   在 BluetoothAuscultation.Forms.FormEducation.dgv_DownLoad_CellContentClick(Object sender, DataGridViewCellEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 712
+   在 System.Windows.Forms.DataGridView.OnCellContentClick(DataGridViewCellEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnCommonCellContentClick(Int32 columnIndex, Int32 rowIndex, Boolean doubleClick)
+   在 System.Windows.Forms.DataGridViewCell.OnMouseUpInternal(DataGridViewCellMouseEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnCellMouseUp(DataGridViewCellMouseEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnMouseUp(MouseEventArgs e)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.DataGridView.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)在2016-09-23 17:47:50时刻
+捕捉到线程异常
+  System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: 将截断字符串或二进制数据。
+语句已终止。 (错误详细信息等于 很可能由 IncludeExceptionDetailInFaults=true 创建的 ExceptionDetail，其值为:
+System.Data.SqlClient.SqlException: 将截断字符串或二进制数据。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyn...)。在2016-09-23 19:15:34时刻
+捕捉到线程异常
+  System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 BluetoothAuscultation.Commucation.SupSocket.Send(Byte[] bytes) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Commucation\SupSocket.cs:行号 99
+   在 BluetoothAuscultation.Forms.FormRemoteAuscultation.cboStethoscope_SelectedIndexChanged(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormRemoteAuscultation.cs:行号 133
+   在 System.Windows.Forms.ComboBox.OnSelectedIndexChanged(EventArgs e)
+   在 System.Windows.Forms.ComboBox.WmReflectCommand(Message& m)
+   在 System.Windows.Forms.ComboBox.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)在2016-09-23 19:15:37时刻
+捕捉到线程异常
+  System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 BluetoothAuscultation.Commucation.SupSocket.Send(Byte[] bytes) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Commucation\SupSocket.cs:行号 99
+   在 BluetoothAuscultation.Forms.FormRemoteAuscultation.cboStethoscope_SelectedIndexChanged(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormRemoteAuscultation.cs:行号 133
+   在 System.Windows.Forms.ComboBox.OnSelectedIndexChanged(EventArgs e)
+   在 System.Windows.Forms.ComboBox.WmReflectCommand(Message& m)
+   在 System.Windows.Forms.ComboBox.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)在2016-09-23 19:15:38时刻
+捕捉到线程异常
+  System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 BluetoothAuscultation.Commucation.SupSocket.Send(Byte[] bytes) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Commucation\SupSocket.cs:行号 99
+   在 BluetoothAuscultation.Forms.FormRemoteAuscultation.cboStethoscope_SelectedIndexChanged(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormRemoteAuscultation.cs:行号 133
+   在 System.Windows.Forms.ComboBox.OnSelectedIndexChanged(EventArgs e)
+   在 System.Windows.Forms.ComboBox.WmReflectCommand(Message& m)
+   在 System.Windows.Forms.ComboBox.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)在2016-09-23 19:15:39时刻
+捕捉到线程异常
+  System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 BluetoothAuscultation.Commucation.SupSocket.Send(Byte[] bytes) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Commucation\SupSocket.cs:行号 99
+   在 BluetoothAuscultation.Forms.FormRemoteAuscultation.cboStethoscope_SelectedIndexChanged(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormRemoteAuscultation.cs:行号 133
+   在 System.Windows.Forms.ComboBox.OnSelectedIndexChanged(EventArgs e)
+   在 System.Windows.Forms.ComboBox.WmReflectCommand(Message& m)
+   在 System.Windows.Forms.ComboBox.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)

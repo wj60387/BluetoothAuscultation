@@ -1,0 +1,323 @@
+﻿在2016-09-24 09:28:18时刻
+捕捉到线程异常
+  System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: 过程或函数 'P_LoadStetInfo' 需要参数 '@StetType'，但未提供该参数。 (错误详细信息等于 很可能由 IncludeExceptionDetailInFaults=true 创建的 ExceptionDetail，其值为:
+System.Data.SqlClient.SqlException: 过程或函数 'P_LoadStetInfo' 需要参数 '@StetType'，但未提供该参数。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.Int...)。在2016-09-24 09:28:37时刻
+捕捉到线程异常
+  System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: 过程或函数 'P_LoadStetInfo' 需要参数 '@StetType'，但未提供该参数。 (错误详细信息等于 很可能由 IncludeExceptionDetailInFaults=true 创建的 ExceptionDetail，其值为:
+System.Data.SqlClient.SqlException: 过程或函数 'P_LoadStetInfo' 需要参数 '@StetType'，但未提供该参数。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.Int...)。在2016-09-24 09:29:42时刻
+捕捉到线程异常
+  System.Data.SQLite.SQLiteException: SQLite error
+no such column: SeteType
+   在 System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   在 System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   在 System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   在 System.Data.SQLite.SQLiteDataReader.NextResult()
+   在 System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteNonQuery()
+   在 BluetoothAuscultation.SQLite.SqliteHelper.ExecuteNonQuery(String sqlText, Object[] dictParams) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\SQLite\SqliteHelper.cs:行号 67
+   在 BluetoothAuscultation.Forms.FormStethoscope.HandleMessage(StetInfoCode message) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormStethoscope.cs:行号 135
+   在 BluetoothAuscultation.Forms.FormStethoscope.ConfigStet(String StetName) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormStethoscope.cs:行号 74
+   在 BluetoothAuscultation.Forms.FormMain.OpenWindow(String formName, String[] args) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormMain.cs:行号 328
+   在 BluetoothAuscultation.Mediator.OpenWindow(String formName, String[] args) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Commmon.cs:行号 85
+   在 BluetoothAuscultation.Forms.FormMenu.配置ToolStripMenuItem_Click(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormMenu.cs:行号 264
+   在 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   在 System.Windows.Forms.ToolStripMenuItem.OnClick(EventArgs e)
+   在 System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   在 System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   在 System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   在 System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   在 System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   在 System.Windows.Forms.ToolStripDropDown.OnMouseUp(MouseEventArgs mea)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   在 System.Windows.Forms.ToolStripDropDown.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)在2016-09-24 09:30:52时刻
+捕捉到线程异常
+  System.Data.SQLite.SQLiteException: SQLite error
+no such column: SeteType
+   在 System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   在 System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   在 System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   在 System.Data.SQLite.SQLiteDataReader.NextResult()
+   在 System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteNonQuery()
+   在 BluetoothAuscultation.SQLite.SqliteHelper.ExecuteNonQuery(String sqlText, Object[] dictParams) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\SQLite\SqliteHelper.cs:行号 67
+   在 BluetoothAuscultation.Forms.FormStethoscope.HandleMessage(StetInfoCode message) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormStethoscope.cs:行号 135
+   在 BluetoothAuscultation.Forms.FormStethoscope.dgvStet_CellContentClick(Object sender, DataGridViewCellEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormStethoscope.cs:行号 283
+   在 System.Windows.Forms.DataGridView.OnCellContentClick(DataGridViewCellEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnCommonCellContentClick(Int32 columnIndex, Int32 rowIndex, Boolean doubleClick)
+   在 System.Windows.Forms.DataGridViewCell.OnMouseUpInternal(DataGridViewCellMouseEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnCellMouseUp(DataGridViewCellMouseEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnMouseUp(MouseEventArgs e)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.DataGridView.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)在2016-09-24 09:32:35时刻
+捕捉到线程异常
+  System.Data.SQLite.SQLiteException: SQLite error
+no such column: SeteType
+   在 System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   在 System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   在 System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   在 System.Data.SQLite.SQLiteDataReader.NextResult()
+   在 System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteNonQuery()
+   在 BluetoothAuscultation.SQLite.SqliteHelper.ExecuteNonQuery(String sqlText, Object[] dictParams) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\SQLite\SqliteHelper.cs:行号 67
+   在 BluetoothAuscultation.Forms.FormStethoscope.HandleMessage(StetInfoCode message) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormStethoscope.cs:行号 135
+   在 BluetoothAuscultation.Forms.FormStethoscope.dgvStet_CellContentClick(Object sender, DataGridViewCellEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormStethoscope.cs:行号 283
+   在 System.Windows.Forms.DataGridView.OnCellContentClick(DataGridViewCellEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnCommonCellContentClick(Int32 columnIndex, Int32 rowIndex, Boolean doubleClick)
+   在 System.Windows.Forms.DataGridViewCell.OnMouseUpInternal(DataGridViewCellMouseEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnCellMouseUp(DataGridViewCellMouseEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnMouseUp(MouseEventArgs e)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.DataGridView.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)在2016-09-24 09:42:19时刻
+捕捉到线程异常
+  System.ServiceModel.CommunicationException: 接收对 http://127.0.0.1/Query 的  HTTP 响应时发生错误。这可能是由于服务终结点绑定未使用 HTTP 协议造成的。这还可能是由于服务器中止了 HTTP 请求上下文(可能由于服务关闭)所致。有关详细信息，请参阅服务器日志。 ---> System.Net.WebException: 基础连接已经关闭: 接收时发生错误。 ---> System.IO.IOException: 无法从传输连接中读取数据: 远程主机强迫关闭了一个现有的连接。。 ---> System.Net.Sockets.SocketException: 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   在 System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   在 System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   --- 内部异常堆栈跟踪的结尾 ---
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   在 System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   在 System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 BluetoothAuscultation.AuscultationService.IAuscultationService.ExecuteNonQuery(String sqlText, String[] Args)
+   在 BluetoothAuscultation.AuscultationService.AuscultationServiceClient.ExecuteNonQuery(String sqlText, String[] Args) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Service References\AuscultationService\Reference.cs:行号 130
+   在 BluetoothAuscultation.Mediator.WriteLog(String FormName, String Message) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Commmon.cs:行号 117
+   在 BluetoothAuscultation.Forms.FormCloud.UpdateData(String StetName, String tabPageName) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormCloud.cs:行号 133
+   在 BluetoothAuscultation.Forms.FormCloud.cboStethoscope_SelectedIndexChanged(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormCloud.cs:行号 196
+   在 System.Windows.Forms.ComboBox.OnSelectedIndexChanged(EventArgs e)
+   在 System.Windows.Forms.ComboBox.WmReflectCommand(Message& m)
+   在 System.Windows.Forms.ComboBox.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)在2016-09-24 09:48:17时刻
+捕捉到线程异常
+  System.TimeoutException: 请求通道在等待 00:01:00 以后答复时超时。增加传递给请求调用的超时值，或者增加绑定上的 SendTimeout 值。分配给此操作的时间可能是更长超时的一部分。 ---> System.TimeoutException: 对“http://127.0.0.1/Query”的 HTTP 请求已超过为 00:01:00 分配的超时。为此操作分配的时间可能是较长超时的一部分。 ---> System.Net.WebException: 操作超时
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   在 System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   在 System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   --- 内部异常堆栈跟踪的结尾 ---
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 BluetoothAuscultation.AuscultationService.IAuscultationService.ExecuteNonQuery(String sqlText, String[] Args)
+   在 BluetoothAuscultation.AuscultationService.AuscultationServiceClient.ExecuteNonQuery(String sqlText, String[] Args) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Service References\AuscultationService\Reference.cs:行号 130
+   在 BluetoothAuscultation.Mediator.WriteLog(String FormName, String Message) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Commmon.cs:行号 117
+   在 BluetoothAuscultation.Forms.FormCloud.UpdateData(String StetName, String tabPageName) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormCloud.cs:行号 133
+   在 BluetoothAuscultation.Forms.FormCloud.cboStethoscope_SelectedIndexChanged(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormCloud.cs:行号 196
+   在 System.Windows.Forms.ComboBox.OnSelectedIndexChanged(EventArgs e)
+   在 System.Windows.Forms.ComboBox.WmReflectCommand(Message& m)
+   在 System.Windows.Forms.ComboBox.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)在2016-09-24 09:56:03时刻
+捕捉到线程异常
+  System.Exception: 目前没有检测到听诊器,请检测设备设置！
+   在 BluetoothAuscultation.Forms.FormTeaching.btnTeach_Click(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormTeaching.cs:行号 64
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)在2016-09-24 09:56:05时刻
+捕捉到线程异常
+  System.Exception: 目前没有检测到听诊器,请检测设备设置！
+   在 BluetoothAuscultation.Forms.FormTeaching.btnTeach_Click(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormTeaching.cs:行号 64
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)在2016-09-24 09:56:05时刻
+捕捉到线程异常
+  System.Exception: 目前没有检测到听诊器,请检测设备设置！
+   在 BluetoothAuscultation.Forms.FormTeaching.btnTeach_Click(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormTeaching.cs:行号 64
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)在2016-09-24 09:56:06时刻
+捕捉到线程异常
+  System.Exception: 目前没有检测到听诊器,请检测设备设置！
+   在 BluetoothAuscultation.Forms.FormTeaching.btnTeach_Click(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormTeaching.cs:行号 64
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)在2016-09-24 09:56:06时刻
+捕捉到线程异常
+  System.Exception: 目前没有检测到听诊器,请检测设备设置！
+   在 BluetoothAuscultation.Forms.FormTeaching.btnTeach_Click(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormTeaching.cs:行号 64
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)在2016-09-24 09:56:06时刻
+捕捉到线程异常
+  System.Exception: 目前没有检测到听诊器,请检测设备设置！
+   在 BluetoothAuscultation.Forms.FormTeaching.btnTeach_Click(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormTeaching.cs:行号 64
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)在2016-09-24 09:56:06时刻
+捕捉到线程异常
+  System.Exception: 目前没有检测到听诊器,请检测设备设置！
+   在 BluetoothAuscultation.Forms.FormTeaching.btnTeach_Click(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormTeaching.cs:行号 64
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)在2016-09-24 13:41:02时刻
+捕捉到线程异常
+  System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: 过程或函数 'P_LoadStetInfo' 需要参数 '@StetType'，但未提供该参数。 (错误详细信息等于 很可能由 IncludeExceptionDetailInFaults=true 创建的 ExceptionDetail，其值为:
+System.Data.SqlClient.SqlException: 过程或函数 'P_LoadStetInfo' 需要参数 '@StetType'，但未提供该参数。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.Int...)。在2016-09-24 13:42:55时刻
+捕捉到线程异常
+  System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: 过程或函数 'P_LoadStetInfo' 需要参数 '@StetType'，但未提供该参数。 (错误详细信息等于 很可能由 IncludeExceptionDetailInFaults=true 创建的 ExceptionDetail，其值为:
+System.Data.SqlClient.SqlException: 过程或函数 'P_LoadStetInfo' 需要参数 '@StetType'，但未提供该参数。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.Int...)。在2016-09-24 13:43:52时刻
+捕捉到线程异常
+  System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: 过程或函数 'P_LoadStetInfo' 需要参数 '@StetType'，但未提供该参数。 (错误详细信息等于 很可能由 IncludeExceptionDetailInFaults=true 创建的 ExceptionDetail，其值为:
+System.Data.SqlClient.SqlException: 过程或函数 'P_LoadStetInfo' 需要参数 '@StetType'，但未提供该参数。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.Int...)。在2016-09-24 13:44:20时刻
+捕捉到线程异常
+  System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: 过程或函数 'P_LoadStetInfo' 需要参数 '@StetType'，但未提供该参数。 (错误详细信息等于 很可能由 IncludeExceptionDetailInFaults=true 创建的 ExceptionDetail，其值为:
+System.Data.SqlClient.SqlException: 过程或函数 'P_LoadStetInfo' 需要参数 '@StetType'，但未提供该参数。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.Int...)。在2016-09-24 13:44:39时刻
+捕捉到线程异常
+  System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: 过程或函数 'P_LoadStetInfo' 需要参数 '@StetType'，但未提供该参数。 (错误详细信息等于 很可能由 IncludeExceptionDetailInFaults=true 创建的 ExceptionDetail，其值为:
+System.Data.SqlClient.SqlException: 过程或函数 'P_LoadStetInfo' 需要参数 '@StetType'，但未提供该参数。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.Int...)。在2016-09-24 23:00:07时刻
+捕捉到线程异常
+  System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: 将截断字符串或二进制数据。
+语句已终止。 (错误详细信息等于 很可能由 IncludeExceptionDetailInFaults=true 创建的 ExceptionDetail，其值为:
+System.Data.SqlClient.SqlException: 将截断字符串或二进制数据。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyn...)。

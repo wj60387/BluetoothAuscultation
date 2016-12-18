@@ -1,0 +1,270 @@
+﻿在2016-09-30 01:35:45时刻
+捕捉到程序域范围内异常
+  System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.FormatException: 输入字符串的格式不正确。
+   在 System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   在 System.Windows.Forms.Control.Invoke(Delegate method, Object[] args)
+   在 System.Windows.Forms.Control.Invoke(Delegate method)
+   在 BluetoothAuscultation.Forms.FormRemoteAuscultation.HandleMessage(RequestRemoteAuscultateCode message) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormRemoteAuscultation.cs:行号 255
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle._InvokeMethodFast(Object target, Object[] arguments, SignatureStruct& sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)
+   在 System.RuntimeMethodHandle.InvokeMethodFast(Object target, Object[] arguments, Signature sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture, Boolean skipVisibilityChecks)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 BluetoothAuscultation.Forms.FormMain.SuperSocket_DataReceived(Object sender, DataReceivedEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormMain.cs:行号 92
+   在 BluetoothAuscultation.Commucation.SupSocket.webSocket_DataReceived(Object sender, DataReceivedEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Commucation\SupSocket.cs:行号 56
+   在 WebSocket4Net.WebSocket.FireDataReceived(Byte[] data)
+   在 WebSocket4Net.Command.Binary.ExecuteCommand(WebSocket session, WebSocketCommandInfo commandInfo)
+   在 WebSocket4Net.WebSocket.ExecuteCommand(WebSocketCommandInfo commandInfo)
+   在 WebSocket4Net.WebSocket.OnDataReceived(Byte[] data, Int32 offset, Int32 length)
+   在 WebSocket4Net.WebSocket.client_DataReceived(Object sender, DataEventArgs e)
+   在 SuperSocket.ClientEngine.ClientSession.OnDataReceived(Byte[] data, Int32 offset, Int32 length)
+   在 SuperSocket.ClientEngine.AsyncTcpSession.ProcessReceive(SocketAsyncEventArgs e)
+   在 SuperSocket.ClientEngine.AsyncTcpSession.SocketEventArgsCompleted(Object sender, SocketAsyncEventArgs e)
+   在 System.Net.Sockets.SocketAsyncEventArgs.OnCompleted(SocketAsyncEventArgs e)
+   在 System.Net.Sockets.SocketAsyncEventArgs.ExecutionCallback(Object ignored)
+   在 System.Threading.ExecutionContext.runTryCode(Object userData)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Net.Sockets.SocketAsyncEventArgs.FinishOperationSuccess(SocketError socketError, Int32 bytesTransferred, SocketFlags flags)
+   在 System.Net.Sockets.SocketAsyncEventArgs.CompletionPortCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* nativeOverlapped)
+   在 System.Threading._IOCompletionCallback.PerformIOCompletionCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* pOVERLAP)在2016-09-30 01:38:32时刻
+捕捉到程序域范围内异常
+  System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.FormatException: 输入字符串的格式不正确。
+   在 System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   在 System.Windows.Forms.Control.Invoke(Delegate method, Object[] args)
+   在 System.Windows.Forms.Control.Invoke(Delegate method)
+   在 BluetoothAuscultation.Forms.FormRemoteAuscultation.HandleMessage(RequestRemoteAuscultateCode message) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormRemoteAuscultation.cs:行号 255
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle._InvokeMethodFast(Object target, Object[] arguments, SignatureStruct& sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)
+   在 System.RuntimeMethodHandle.InvokeMethodFast(Object target, Object[] arguments, Signature sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture, Boolean skipVisibilityChecks)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 BluetoothAuscultation.Forms.FormMain.SuperSocket_DataReceived(Object sender, DataReceivedEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormMain.cs:行号 92
+   在 BluetoothAuscultation.Commucation.SupSocket.webSocket_DataReceived(Object sender, DataReceivedEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Commucation\SupSocket.cs:行号 56
+   在 WebSocket4Net.WebSocket.FireDataReceived(Byte[] data)
+   在 WebSocket4Net.Command.Binary.ExecuteCommand(WebSocket session, WebSocketCommandInfo commandInfo)
+   在 WebSocket4Net.WebSocket.ExecuteCommand(WebSocketCommandInfo commandInfo)
+   在 WebSocket4Net.WebSocket.OnDataReceived(Byte[] data, Int32 offset, Int32 length)
+   在 WebSocket4Net.WebSocket.client_DataReceived(Object sender, DataEventArgs e)
+   在 SuperSocket.ClientEngine.ClientSession.OnDataReceived(Byte[] data, Int32 offset, Int32 length)
+   在 SuperSocket.ClientEngine.AsyncTcpSession.ProcessReceive(SocketAsyncEventArgs e)
+   在 SuperSocket.ClientEngine.AsyncTcpSession.SocketEventArgsCompleted(Object sender, SocketAsyncEventArgs e)
+   在 System.Net.Sockets.SocketAsyncEventArgs.OnCompleted(SocketAsyncEventArgs e)
+   在 System.Net.Sockets.SocketAsyncEventArgs.ExecutionCallback(Object ignored)
+   在 System.Threading.ExecutionContext.runTryCode(Object userData)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Net.Sockets.SocketAsyncEventArgs.FinishOperationSuccess(SocketError socketError, Int32 bytesTransferred, SocketFlags flags)
+   在 System.Net.Sockets.SocketAsyncEventArgs.CompletionPortCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* nativeOverlapped)
+   在 System.Threading._IOCompletionCallback.PerformIOCompletionCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* pOVERLAP)在2016-09-30 02:17:31时刻
+捕捉到程序域范围内异常
+  System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.InvalidOperationException: 线程间操作无效: 从不是创建控件“FormProcessBar”的线程访问它。
+   在 System.Windows.Forms.Control.get_Handle()
+   在 System.Windows.Forms.Control.SendMessage(Int32 msg, Int32 wparam, Int32 lparam)
+   在 System.Windows.Forms.Form.Close()
+   在 BluetoothAuscultation.Forms.FormAuscultation.<>c__DisplayClass1c.<HandleMessage>b__17(Boolean b) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormAuscultation.cs:行号 342
+   在 BluetoothAuscultation.Forms.FormAuscultation.set_IsReceived(Boolean value) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormAuscultation.cs:行号 370
+   在 BluetoothAuscultation.Forms.FormAuscultation.HandleMessage(RemoteStopAudioOutputCode message) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormAuscultation.cs:行号 388
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle._InvokeMethodFast(Object target, Object[] arguments, SignatureStruct& sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)
+   在 System.RuntimeMethodHandle.InvokeMethodFast(Object target, Object[] arguments, Signature sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture, Boolean skipVisibilityChecks)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 BluetoothAuscultation.Forms.FormMain.SuperSocket_DataReceived(Object sender, DataReceivedEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormMain.cs:行号 92
+   在 BluetoothAuscultation.Commucation.SupSocket.webSocket_DataReceived(Object sender, DataReceivedEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Commucation\SupSocket.cs:行号 56
+   在 WebSocket4Net.WebSocket.FireDataReceived(Byte[] data)
+   在 WebSocket4Net.Command.Binary.ExecuteCommand(WebSocket session, WebSocketCommandInfo commandInfo)
+   在 WebSocket4Net.WebSocket.ExecuteCommand(WebSocketCommandInfo commandInfo)
+   在 WebSocket4Net.WebSocket.OnDataReceived(Byte[] data, Int32 offset, Int32 length)
+   在 WebSocket4Net.WebSocket.client_DataReceived(Object sender, DataEventArgs e)
+   在 SuperSocket.ClientEngine.ClientSession.OnDataReceived(Byte[] data, Int32 offset, Int32 length)
+   在 SuperSocket.ClientEngine.AsyncTcpSession.ProcessReceive(SocketAsyncEventArgs e)
+   在 SuperSocket.ClientEngine.AsyncTcpSession.SocketEventArgsCompleted(Object sender, SocketAsyncEventArgs e)
+   在 System.Net.Sockets.SocketAsyncEventArgs.OnCompleted(SocketAsyncEventArgs e)
+   在 System.Net.Sockets.SocketAsyncEventArgs.ExecutionCallback(Object ignored)
+   在 System.Threading.ExecutionContext.runTryCode(Object userData)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Net.Sockets.SocketAsyncEventArgs.FinishOperationSuccess(SocketError socketError, Int32 bytesTransferred, SocketFlags flags)
+   在 System.Net.Sockets.SocketAsyncEventArgs.CompletionPortCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* nativeOverlapped)
+   在 System.Threading._IOCompletionCallback.PerformIOCompletionCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* pOVERLAP)在2016-09-30 02:17:50时刻
+捕捉到程序域范围内异常
+  System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.InvalidOperationException: 线程间操作无效: 从不是创建控件“FormProcessBar”的线程访问它。
+   在 System.Windows.Forms.Control.get_Handle()
+   在 System.Windows.Forms.Control.SendMessage(Int32 msg, Int32 wparam, Int32 lparam)
+   在 System.Windows.Forms.Form.Close()
+   在 BluetoothAuscultation.Forms.FormAuscultation.<>c__DisplayClass1c.<HandleMessage>b__17(Boolean b) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormAuscultation.cs:行号 342
+   在 BluetoothAuscultation.Forms.FormAuscultation.set_IsReceived(Boolean value) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormAuscultation.cs:行号 370
+   在 BluetoothAuscultation.Forms.FormAuscultation.HandleMessage(RemoteStopAudioOutputCode message) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormAuscultation.cs:行号 388
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle._InvokeMethodFast(Object target, Object[] arguments, SignatureStruct& sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)
+   在 System.RuntimeMethodHandle.InvokeMethodFast(Object target, Object[] arguments, Signature sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture, Boolean skipVisibilityChecks)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 BluetoothAuscultation.Forms.FormMain.SuperSocket_DataReceived(Object sender, DataReceivedEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormMain.cs:行号 92
+   在 BluetoothAuscultation.Commucation.SupSocket.webSocket_DataReceived(Object sender, DataReceivedEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Commucation\SupSocket.cs:行号 56
+   在 WebSocket4Net.WebSocket.FireDataReceived(Byte[] data)
+   在 WebSocket4Net.Command.Binary.ExecuteCommand(WebSocket session, WebSocketCommandInfo commandInfo)
+   在 WebSocket4Net.WebSocket.ExecuteCommand(WebSocketCommandInfo commandInfo)
+   在 WebSocket4Net.WebSocket.OnDataReceived(Byte[] data, Int32 offset, Int32 length)
+   在 WebSocket4Net.WebSocket.client_DataReceived(Object sender, DataEventArgs e)
+   在 SuperSocket.ClientEngine.ClientSession.OnDataReceived(Byte[] data, Int32 offset, Int32 length)
+   在 SuperSocket.ClientEngine.AsyncTcpSession.ProcessReceive(SocketAsyncEventArgs e)
+   在 SuperSocket.ClientEngine.AsyncTcpSession.SocketEventArgsCompleted(Object sender, SocketAsyncEventArgs e)
+   在 System.Net.Sockets.SocketAsyncEventArgs.OnCompleted(SocketAsyncEventArgs e)
+   在 System.Net.Sockets.SocketAsyncEventArgs.ExecutionCallback(Object ignored)
+   在 System.Threading.ExecutionContext.runTryCode(Object userData)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Net.Sockets.SocketAsyncEventArgs.FinishOperationSuccess(SocketError socketError, Int32 bytesTransferred, SocketFlags flags)
+   在 System.Net.Sockets.SocketAsyncEventArgs.CompletionPortCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* nativeOverlapped)
+   在 System.Threading._IOCompletionCallback.PerformIOCompletionCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* pOVERLAP)在2016-09-30 02:18:02时刻
+捕捉到程序域范围内异常
+  System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.InvalidOperationException: 线程间操作无效: 从不是创建控件“FormProcessBar”的线程访问它。
+   在 System.Windows.Forms.Control.get_Handle()
+   在 System.Windows.Forms.Control.SendMessage(Int32 msg, Int32 wparam, Int32 lparam)
+   在 System.Windows.Forms.Form.Close()
+   在 BluetoothAuscultation.Forms.FormAuscultation.<>c__DisplayClass1c.<HandleMessage>b__17(Boolean b) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormAuscultation.cs:行号 342
+   在 BluetoothAuscultation.Forms.FormAuscultation.set_IsReceived(Boolean value) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormAuscultation.cs:行号 370
+   在 BluetoothAuscultation.Forms.FormAuscultation.HandleMessage(RemoteStopAudioOutputCode message) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormAuscultation.cs:行号 388
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle._InvokeMethodFast(Object target, Object[] arguments, SignatureStruct& sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)
+   在 System.RuntimeMethodHandle.InvokeMethodFast(Object target, Object[] arguments, Signature sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture, Boolean skipVisibilityChecks)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 BluetoothAuscultation.Forms.FormMain.SuperSocket_DataReceived(Object sender, DataReceivedEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormMain.cs:行号 92
+   在 BluetoothAuscultation.Commucation.SupSocket.webSocket_DataReceived(Object sender, DataReceivedEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Commucation\SupSocket.cs:行号 56
+   在 WebSocket4Net.WebSocket.FireDataReceived(Byte[] data)
+   在 WebSocket4Net.Command.Binary.ExecuteCommand(WebSocket session, WebSocketCommandInfo commandInfo)
+   在 WebSocket4Net.WebSocket.ExecuteCommand(WebSocketCommandInfo commandInfo)
+   在 WebSocket4Net.WebSocket.OnDataReceived(Byte[] data, Int32 offset, Int32 length)
+   在 WebSocket4Net.WebSocket.client_DataReceived(Object sender, DataEventArgs e)
+   在 SuperSocket.ClientEngine.ClientSession.OnDataReceived(Byte[] data, Int32 offset, Int32 length)
+   在 SuperSocket.ClientEngine.AsyncTcpSession.ProcessReceive(SocketAsyncEventArgs e)
+   在 SuperSocket.ClientEngine.AsyncTcpSession.SocketEventArgsCompleted(Object sender, SocketAsyncEventArgs e)
+   在 System.Net.Sockets.SocketAsyncEventArgs.OnCompleted(SocketAsyncEventArgs e)
+   在 System.Net.Sockets.SocketAsyncEventArgs.ExecutionCallback(Object ignored)
+   在 System.Threading.ExecutionContext.runTryCode(Object userData)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Net.Sockets.SocketAsyncEventArgs.FinishOperationSuccess(SocketError socketError, Int32 bytesTransferred, SocketFlags flags)
+   在 System.Net.Sockets.SocketAsyncEventArgs.CompletionPortCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* nativeOverlapped)
+   在 System.Threading._IOCompletionCallback.PerformIOCompletionCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* pOVERLAP)在2016-09-30 02:18:50时刻
+捕捉到程序域范围内异常
+  System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.InvalidOperationException: 线程间操作无效: 从不是创建控件“FormProcessBar”的线程访问它。
+   在 System.Windows.Forms.Control.get_Handle()
+   在 System.Windows.Forms.Control.SendMessage(Int32 msg, Int32 wparam, Int32 lparam)
+   在 System.Windows.Forms.Form.Close()
+   在 BluetoothAuscultation.Forms.FormAuscultation.<>c__DisplayClass1c.<HandleMessage>b__17(Boolean b) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormAuscultation.cs:行号 342
+   在 BluetoothAuscultation.Forms.FormAuscultation.set_IsReceived(Boolean value) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormAuscultation.cs:行号 370
+   在 BluetoothAuscultation.Forms.FormAuscultation.HandleMessage(RemoteStopAudioOutputCode message) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormAuscultation.cs:行号 388
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle._InvokeMethodFast(Object target, Object[] arguments, SignatureStruct& sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)
+   在 System.RuntimeMethodHandle.InvokeMethodFast(Object target, Object[] arguments, Signature sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture, Boolean skipVisibilityChecks)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 BluetoothAuscultation.Forms.FormMain.SuperSocket_DataReceived(Object sender, DataReceivedEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormMain.cs:行号 92
+   在 BluetoothAuscultation.Commucation.SupSocket.webSocket_DataReceived(Object sender, DataReceivedEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Commucation\SupSocket.cs:行号 56
+   在 WebSocket4Net.WebSocket.FireDataReceived(Byte[] data)
+   在 WebSocket4Net.Command.Binary.ExecuteCommand(WebSocket session, WebSocketCommandInfo commandInfo)
+   在 WebSocket4Net.WebSocket.ExecuteCommand(WebSocketCommandInfo commandInfo)
+   在 WebSocket4Net.WebSocket.OnDataReceived(Byte[] data, Int32 offset, Int32 length)
+   在 WebSocket4Net.WebSocket.client_DataReceived(Object sender, DataEventArgs e)
+   在 SuperSocket.ClientEngine.ClientSession.OnDataReceived(Byte[] data, Int32 offset, Int32 length)
+   在 SuperSocket.ClientEngine.AsyncTcpSession.ProcessReceive(SocketAsyncEventArgs e)
+   在 SuperSocket.ClientEngine.AsyncTcpSession.SocketEventArgsCompleted(Object sender, SocketAsyncEventArgs e)
+   在 System.Net.Sockets.SocketAsyncEventArgs.OnCompleted(SocketAsyncEventArgs e)
+   在 System.Net.Sockets.SocketAsyncEventArgs.ExecutionCallback(Object ignored)
+   在 System.Threading.ExecutionContext.runTryCode(Object userData)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Net.Sockets.SocketAsyncEventArgs.FinishOperationSuccess(SocketError socketError, Int32 bytesTransferred, SocketFlags flags)
+   在 System.Net.Sockets.SocketAsyncEventArgs.CompletionPortCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* nativeOverlapped)
+   在 System.Threading._IOCompletionCallback.PerformIOCompletionCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* pOVERLAP)在2016-09-30 03:29:48时刻
+捕捉到线程异常
+  System.ArgumentException: 未能找到名为 ToStetName 的列。
+参数名: columnName
+   在 System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   在 BluetoothAuscultation.Forms.FormAuscultation.btnExit_Click(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormAuscultation.cs:行号 207
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)在2016-09-30 03:29:48时刻
+捕捉到线程异常
+  System.ArgumentException: 未能找到名为 ToStetName 的列。
+参数名: columnName
+   在 System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   在 BluetoothAuscultation.Forms.FormAuscultation.btnExit_Click(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormAuscultation.cs:行号 207
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)在2016-09-30 03:29:49时刻
+捕捉到线程异常
+  System.ArgumentException: 未能找到名为 ToStetName 的列。
+参数名: columnName
+   在 System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   在 BluetoothAuscultation.Forms.FormAuscultation.btnExit_Click(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormAuscultation.cs:行号 207
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)在2016-09-30 03:29:49时刻
+捕捉到线程异常
+  System.ArgumentException: 未能找到名为 ToStetName 的列。
+参数名: columnName
+   在 System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   在 BluetoothAuscultation.Forms.FormAuscultation.btnExit_Click(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormAuscultation.cs:行号 207
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)在2016-09-30 03:29:50时刻
+捕捉到线程异常
+  System.ArgumentException: 未能找到名为 ToStetName 的列。
+参数名: columnName
+   在 System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   在 BluetoothAuscultation.Forms.FormAuscultation.btnExit_Click(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormAuscultation.cs:行号 207
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)

@@ -1,0 +1,55 @@
+﻿在2016-09-27 03:46:45时刻
+捕捉到程序域范围内异常
+  System.InvalidOperationException: Undo 操作遇到的上下文与相应 Set 操作中应用的上下文不同。可是因为在线程上 Set 了一个上下文但未进行还原(撤消)。
+   在 System.Threading.SynchronizationContextSwitcher.Undo()
+   在 System.Threading.ExecutionContextSwitcher.Undo()
+   在 System.Threading.ExecutionContext.runFinallyCode(Object userData, Boolean exceptionThrown)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteBackoutCodeHelper(Object backoutCode, Object userData, Boolean exceptionThrown)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Net.Sockets.SocketAsyncEventArgs.FinishOperationSuccess(SocketError socketError, Int32 bytesTransferred, SocketFlags flags)
+   在 System.Net.Sockets.SocketAsyncEventArgs.CompletionPortCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* nativeOverlapped)
+   在 System.Threading._IOCompletionCallback.PerformIOCompletionCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* pOVERLAP)在2016-09-27 03:48:34时刻
+捕捉到程序域范围内异常
+  System.InvalidOperationException: Undo 操作遇到的上下文与相应 Set 操作中应用的上下文不同。可是因为在线程上 Set 了一个上下文但未进行还原(撤消)。
+   在 System.Threading.SynchronizationContextSwitcher.Undo()
+   在 System.Threading.ExecutionContextSwitcher.Undo()
+   在 System.Threading.ExecutionContext.runFinallyCode(Object userData, Boolean exceptionThrown)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteBackoutCodeHelper(Object backoutCode, Object userData, Boolean exceptionThrown)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Net.Sockets.SocketAsyncEventArgs.FinishOperationSuccess(SocketError socketError, Int32 bytesTransferred, SocketFlags flags)
+   在 System.Net.Sockets.SocketAsyncEventArgs.CompletionPortCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* nativeOverlapped)
+   在 System.Threading._IOCompletionCallback.PerformIOCompletionCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* pOVERLAP)在2016-09-27 05:43:25时刻
+捕捉到线程异常
+  System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 BluetoothAuscultation.Commucation.SupSocket.Send(Byte[] bytes) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Commucation\SupSocket.cs:行号 99
+   在 BluetoothAuscultation.Forms.FormRemoteAuscultation.cboStethoscope_SelectedIndexChanged(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormRemoteAuscultation.cs:行号 193
+   在 System.Windows.Forms.ComboBox.OnSelectedIndexChanged(EventArgs e)
+   在 System.Windows.Forms.ComboBox.WmReflectCommand(Message& m)
+   在 System.Windows.Forms.ComboBox.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)在2016-09-27 05:43:27时刻
+捕捉到线程异常
+  System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 BluetoothAuscultation.Commucation.SupSocket.Send(Byte[] bytes) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Commucation\SupSocket.cs:行号 99
+   在 BluetoothAuscultation.Forms.FormRemoteAuscultation.cboStethoscope_SelectedIndexChanged(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormRemoteAuscultation.cs:行号 193
+   在 System.Windows.Forms.ComboBox.OnSelectedIndexChanged(EventArgs e)
+   在 System.Windows.Forms.ComboBox.WmReflectCommand(Message& m)
+   在 System.Windows.Forms.ComboBox.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)在2016-09-27 05:43:36时刻
+捕捉到线程异常
+  System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 BluetoothAuscultation.Commucation.SupSocket.Send(Byte[] bytes) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Commucation\SupSocket.cs:行号 99
+   在 BluetoothAuscultation.Forms.FormRemoteAuscultation.cboStethoscope_SelectedIndexChanged(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormRemoteAuscultation.cs:行号 193
+   在 System.Windows.Forms.ComboBox.OnSelectedIndexChanged(EventArgs e)
+   在 System.Windows.Forms.ComboBox.WmReflectCommand(Message& m)
+   在 System.Windows.Forms.ComboBox.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)

@@ -10,6 +10,8 @@ using System.Drawing.Imaging;
 using System.Runtime.InteropServices;
 using BluetoothAuscultation.Utilities;
 using Newtonsoft.Json;
+using System.Xml;
+using System.Configuration;
 
 namespace BluetoothAuscultation
 {
@@ -67,6 +69,23 @@ namespace BluetoothAuscultation
                         return Color.White;
                 }
                 return Color.FromArgb(arr[0], arr[1], arr[2]);
+            }
+            set
+            {
+                string color = string.Join(",", new string[] { value.R + "", value.G + "", value.B + "" });
+                Configuration config = System.Configuration.ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+                //根据Key读取<add>元素的Value
+                string name = config.AppSettings.Settings["themeColor"].Value;
+                //写入<add>元素的Value
+                config.AppSettings.Settings["themeColor"].Value = color;
+                ////增加<add>元素
+                //config.AppSettings.Settings.Add("url", "http://www.xieyc.com");
+                ////删除<add>元素
+                //config.AppSettings.Settings.Remove("name");
+                //一定要记得保存，写不带参数的config.Save()也可以
+                config.Save(ConfigurationSaveMode.Modified);
+                //刷新，否则程序读取的还是之前的值（可能已装入内存）
+                System.Configuration.ConfigurationManager.RefreshSection("appSettings");
             }
         }
         private static byte GetAvg(byte b, byte g, byte r)
@@ -131,7 +150,7 @@ namespace BluetoothAuscultation
         public static Image ImageShare = new Bitmap("Image\\share.png");
         public static Image ImagePlay = new Bitmap("Image\\play.png");
         public static Image ImageDelete = new Bitmap("Image\\delete.png");
-        public static Image ImageUpload = new Bitmap("Image\\upload.png");
+        //public static Image ImageUpload = new Bitmap("Image\\upload.png");
         public static Image ImageDownload = new Bitmap("Image\\download.png");
         public static Image ImageDetail = new Bitmap("Image\\xq.png");
         public static Image ImageRecord = new Bitmap("Image\\ly.png");

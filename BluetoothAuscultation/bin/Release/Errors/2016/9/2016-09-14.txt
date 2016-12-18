@@ -1,0 +1,50 @@
+﻿在2016-09-14 13:39:28时刻
+捕捉到线程异常
+  System.IndexOutOfRangeException: 索引超出了数组界限。
+   在 BluetoothAuscultation.Forms.FormStethoscope.FormStethoscope_Shown(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormStethoscope.cs:行号 40
+   在 System.Windows.Forms.Form.OnShown(EventArgs e)
+   在 System.Windows.Forms.Form.CallShownEvent()
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   在 System.Threading.ExecutionContext.runTryCode(Object userData)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbacks()在2016-09-14 13:41:47时刻
+捕捉到线程异常
+  System.IndexOutOfRangeException: 索引超出了数组界限。
+   在 BluetoothAuscultation.Forms.FormStethoscope.FormStethoscope_Shown(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormStethoscope.cs:行号 40
+   在 System.Windows.Forms.Form.OnShown(EventArgs e)
+   在 System.Windows.Forms.Form.CallShownEvent()
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   在 System.Threading.ExecutionContext.runTryCode(Object userData)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbacks()在2016-09-14 13:52:07时刻
+捕捉到线程异常
+  System.Data.SQLite.SQLiteException: SQLite error
+8 values for 9 columns
+   在 System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   在 System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   在 System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   在 System.Data.SQLite.SQLiteDataReader.NextResult()
+   在 System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteNonQuery()
+   在 BluetoothAuscultation.SQLite.SqliteHelper.ExecuteNonQuery(String sqlText, Object[] dictParams) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\SQLite\SqliteHelper.cs:行号 67
+   在 BluetoothAuscultation.Forms.FormStethoscope.HandleMessage(StetInfoCode message) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormStethoscope.cs:行号 137
+   在 BluetoothAuscultation.Forms.FormStethoscope.FormStethoscope_Shown(Object sender, EventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormStethoscope.cs:行号 67
+   在 System.Windows.Forms.Form.OnShown(EventArgs e)
+   在 System.Windows.Forms.Form.CallShownEvent()
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   在 System.Threading.ExecutionContext.runTryCode(Object userData)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbacks()

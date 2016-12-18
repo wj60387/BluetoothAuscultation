@@ -1,0 +1,134 @@
+﻿在2016-09-22 13:20:26时刻
+捕捉到线程异常
+  System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 BluetoothAuscultation.Forms.FormEx.FormEx_Paint(Object sender, PaintEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEx.cs:行号 107
+   在 System.Windows.Forms.Control.OnPaint(PaintEventArgs e)
+   在 System.Windows.Forms.Form.OnPaint(PaintEventArgs e)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer, Boolean disposeEventArgs)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.ContainerControl.WndProc(Message& m)
+   在 System.Windows.Forms.Form.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)在2016-09-22 20:55:06时刻
+捕捉到线程异常
+  System.IO.FileNotFoundException: Image\Part心脏1.jpg
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 BluetoothAuscultation.Forms.FormPatientInfo.set_PatientPartImageName(String value) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormPatientInfo.cs:行号 54
+   在 BluetoothAuscultation.Forms.FormEducation.dgvLocal_CellContentClick(Object sender, DataGridViewCellEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 299
+   在 System.Windows.Forms.DataGridView.OnCellContentClick(DataGridViewCellEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnCommonCellContentClick(Int32 columnIndex, Int32 rowIndex, Boolean doubleClick)
+   在 System.Windows.Forms.DataGridViewCell.OnMouseUpInternal(DataGridViewCellMouseEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnCellMouseUp(DataGridViewCellMouseEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnMouseUp(MouseEventArgs e)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.DataGridView.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)在2016-09-22 20:55:08时刻
+捕捉到线程异常
+  System.IO.FileNotFoundException: Image\Part心脏1.jpg
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 BluetoothAuscultation.Forms.FormPatientInfo.set_PatientPartImageName(String value) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormPatientInfo.cs:行号 54
+   在 BluetoothAuscultation.Forms.FormEducation.dgvLocal_CellContentClick(Object sender, DataGridViewCellEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 299
+   在 System.Windows.Forms.DataGridView.OnCellContentClick(DataGridViewCellEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnCommonCellContentClick(Int32 columnIndex, Int32 rowIndex, Boolean doubleClick)
+   在 System.Windows.Forms.DataGridViewCell.OnMouseUpInternal(DataGridViewCellMouseEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnCellMouseUp(DataGridViewCellMouseEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnMouseUp(MouseEventArgs e)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.DataGridView.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)在2016-09-22 20:55:18时刻
+捕捉到线程异常
+  System.IO.FileNotFoundException: Image\Part心脏1.jpg
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 BluetoothAuscultation.Forms.FormPatientInfo.set_PatientPartImageName(String value) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormPatientInfo.cs:行号 54
+   在 BluetoothAuscultation.Forms.FormEducation.dgvLocal_CellContentClick(Object sender, DataGridViewCellEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 299
+   在 System.Windows.Forms.DataGridView.OnCellContentClick(DataGridViewCellEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnCommonCellContentClick(Int32 columnIndex, Int32 rowIndex, Boolean doubleClick)
+   在 System.Windows.Forms.DataGridViewCell.OnMouseUpInternal(DataGridViewCellMouseEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnCellMouseUp(DataGridViewCellMouseEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnMouseUp(MouseEventArgs e)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.DataGridView.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)在2016-09-22 20:55:18时刻
+捕捉到线程异常
+  System.IO.FileNotFoundException: Image\Part心脏1.jpg
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 BluetoothAuscultation.Forms.FormPatientInfo.set_PatientPartImageName(String value) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormPatientInfo.cs:行号 54
+   在 BluetoothAuscultation.Forms.FormEducation.dgvLocal_CellContentClick(Object sender, DataGridViewCellEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 299
+   在 System.Windows.Forms.DataGridView.OnCellContentClick(DataGridViewCellEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnCommonCellContentClick(Int32 columnIndex, Int32 rowIndex, Boolean doubleClick)
+   在 System.Windows.Forms.DataGridViewCell.OnMouseUpInternal(DataGridViewCellMouseEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnCellMouseUp(DataGridViewCellMouseEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnMouseUp(MouseEventArgs e)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.DataGridView.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)在2016-09-22 20:55:21时刻
+捕捉到线程异常
+  System.IO.FileNotFoundException: Image\Part心脏1.jpg
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 BluetoothAuscultation.Forms.FormPatientInfo.set_PatientPartImageName(String value) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormPatientInfo.cs:行号 54
+   在 BluetoothAuscultation.Forms.FormEducation.dgvLocal_CellContentClick(Object sender, DataGridViewCellEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 299
+   在 System.Windows.Forms.DataGridView.OnCellContentClick(DataGridViewCellEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnCommonCellContentClick(Int32 columnIndex, Int32 rowIndex, Boolean doubleClick)
+   在 System.Windows.Forms.DataGridViewCell.OnMouseUpInternal(DataGridViewCellMouseEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnCellMouseUp(DataGridViewCellMouseEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnMouseUp(MouseEventArgs e)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.DataGridView.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)在2016-09-22 20:55:50时刻
+捕捉到线程异常
+  System.IO.FileNotFoundException: Image\Part心脏1.jpg
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 BluetoothAuscultation.Forms.FormPatientInfo.set_PatientPartImageName(String value) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormPatientInfo.cs:行号 54
+   在 BluetoothAuscultation.Forms.FormEducation.dgvLocal_CellContentClick(Object sender, DataGridViewCellEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 299
+   在 System.Windows.Forms.DataGridView.OnCellContentClick(DataGridViewCellEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnCommonCellContentClick(Int32 columnIndex, Int32 rowIndex, Boolean doubleClick)
+   在 System.Windows.Forms.DataGridViewCell.OnMouseUpInternal(DataGridViewCellMouseEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnCellMouseUp(DataGridViewCellMouseEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnMouseUp(MouseEventArgs e)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.DataGridView.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)在2016-09-22 20:56:32时刻
+捕捉到线程异常
+  System.IO.FileNotFoundException: Image\Part心脏1.jpg
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 BluetoothAuscultation.Forms.FormPatientInfo.set_PatientPartImageName(String value) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormPatientInfo.cs:行号 54
+   在 BluetoothAuscultation.Forms.FormEducation.dgvLocal_CellContentClick(Object sender, DataGridViewCellEventArgs e) 位置 D:\WorkSpace\VS2010\Private\BluetoothAuscultation\BluetoothAuscultation\Forms\FormEducation.cs:行号 299
+   在 System.Windows.Forms.DataGridView.OnCellContentClick(DataGridViewCellEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnCommonCellContentClick(Int32 columnIndex, Int32 rowIndex, Boolean doubleClick)
+   在 System.Windows.Forms.DataGridViewCell.OnMouseUpInternal(DataGridViewCellMouseEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnCellMouseUp(DataGridViewCellMouseEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnMouseUp(MouseEventArgs e)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.DataGridView.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)

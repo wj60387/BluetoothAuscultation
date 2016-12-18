@@ -34,7 +34,6 @@ namespace BluetoothAuscultation.Forms
         {
             InitializeComponent();
             this.Load += new EventHandler(FormMain_Load);
-            
         }
         public void HandleMessage(RegistCode message)
         {
@@ -164,6 +163,8 @@ namespace BluetoothAuscultation.Forms
               //  LoadMenu();
                 LoadStetInfo();
             }
+
+            this.setBackColor(Setting.themeColor);
             Thread thread = new Thread(LoadAudioFile);
             thread.Start("DevicesData\\AudioFiles");
         }
@@ -535,18 +536,7 @@ namespace BluetoothAuscultation.Forms
                 }
 
             }
-            //foreach (var item in this.dockPanel1.Contents)
-            //{
-            //    if (item.GetType().Name == typeof(FormIndex).Name)
-            //    {
-            //        if (!item.DockHandler.Form.Visible)
-            //        {
-            //            item.DockHandler.Form.Visible = true;
-            //            item.DockHandler.Activate();
-            //        }
-            //        break;
-            //    }
-            //}
+           
         }
         private void 主菜单ToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -568,18 +558,7 @@ namespace BluetoothAuscultation.Forms
                 }
 
             }
-            //foreach (var item in this.dockPanel1.Contents)
-            //{
-            //    if (item.GetType().Name == typeof(FormStethoscope).Name)
-            //    {
-            //        if (!item.DockHandler.Form.Visible)
-            //        {
-            //            item.DockHandler.Form.Visible = true;
-            //            item.DockHandler.Activate();
-            //        }
-            //        break;
-            //    }
-            //}
+            
         }
         public int Times = 0;
         private void timer1_Tick(object sender, EventArgs e)
@@ -661,29 +640,7 @@ namespace BluetoothAuscultation.Forms
 
         public void HandleMessage(GetDownedAudioCode message)
         {
-            //Invoke(new MethodInvoker(() =>
-            //{
-            //    {
-            //        foreach (DataRow dr in message.DTable.Rows)
-            //        {
-            //            dgv_DownLoad.Rows.Add(
-            //                dr["GUID"]
-            //            , dr["StetSerialNumber"]
-            //            , dr["StetName"]
-            //            , dr["PatientID"]
-            //            , dr["PatientName"]
-            //            , dr["Posture"]
-            //            , dr["Part"]
-            //            , dr["RecordTime"]
-            //            , dr["TakeTime"]
-            //            , dr["Remark"]
-            //            , dr["StetName"]
-            //            , dr["ShareTime"]
-            //            , dr["DownLoadTime"]
-            //            );
-            //        }
-            //    }
-            //}));
+            
         }
 
         private void btnSkin_Click(object sender, EventArgs e)
@@ -716,13 +673,19 @@ namespace BluetoothAuscultation.Forms
             cd.FullOpen = true;
             if (cd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-                foreach (Form form in Application.OpenForms)
-                {
-                    form.SetBackColor(cd.Color);
-                    menuStrip1.BackColor = cd.Color;
-                    toolStrip1.BackColor = cd.Color;
-                }
+                setBackColor(cd.Color);
             }
+        }
+
+        void setBackColor(Color color)
+        {
+            foreach (Form form in Application.OpenForms)
+            {
+                form.SetBackColor(color);
+                menuStrip1.BackColor = color;
+                toolStrip1.BackColor = color;
+            }
+            Setting.themeColor = color;
         }
 
         private void 听诊器配置toolStripMenuItem_Click(object sender, EventArgs e)
