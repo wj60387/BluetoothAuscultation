@@ -13,7 +13,7 @@ using System.IO;
 
 namespace BluetoothAuscultation.Forms
 {
-    public partial class FormReg : Form, IHandleMessage<RegistCode>
+    public partial class FormReg : Form 
     {
         public FormReg(string Mac = "")
         {
@@ -43,25 +43,9 @@ namespace BluetoothAuscultation.Forms
                 this.Close();
                 return;
             }
-            MessageBox.Show(string.Format("注册码 {0} 无效或者与您的机器不匹配", txtRegisteredCode.Text));
+            MessageBox.Show(string.Format("注册码 {0} 无效或者与您的机器不匹配", txtRegisteredCode.Text),"激活码无效", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        public void HandleMessage(RegistCode message)
-        {
-            Invoke(new MethodInvoker(() =>
-                       {
-                           var path = Path.Combine(Application.StartupPath, "applicense.txt");
-                           System.IO.File.WriteAllText(path, message.License);
-                           if (!message.isLegal)
-                           {
-                               MessageBox.Show(string.Format("注册码 {0} 无效或者与您的机器不匹配", txtRegisteredCode.Text));
-                           }
-                           else
-                           {
-                               MessageBox.Show("激活成功，请重启程序!");
-                               this.Close();
-                           }
-                       }));
-        }
+       
     }
 }
