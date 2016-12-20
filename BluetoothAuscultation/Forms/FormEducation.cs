@@ -365,6 +365,8 @@ namespace BluetoothAuscultation.Forms
                                 PatientID = row["PatientID"] + "",
                                 PatientName = row["PatientName"] + "",
                                 DocName = row["DocName"] + "",
+                                PatientSex = row["PatientSex"] + "",
+                                PatientAge = (int)row["PatientAge"],
                                 DocDiagnose = row["DocDiagnose"] + "",
                                 DocRemark = row["DocRemark"] + "",
                                 His = row["Flag"] + "",

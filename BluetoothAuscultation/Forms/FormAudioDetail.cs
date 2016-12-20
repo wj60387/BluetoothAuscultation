@@ -57,6 +57,7 @@ namespace BluetoothAuscultation.Forms
             LoadAudio();
             this.dataGridViewEx1.RowsDefaultCellStyle = new DataGridViewCellStyle() { SelectionForeColor = Color.Black, Alignment = DataGridViewContentAlignment.MiddleCenter };
             LoadFile();
+               
         }
         void LoadAudio()
         {
@@ -180,8 +181,8 @@ namespace BluetoothAuscultation.Forms
             var imageList = IInfo.GetImage(this.PatientGUID);
             foreach (var image in imageList)
             {
-                var thumbnailImage = image.GetThumbnailImage(50, panelImages.Height, () => { return true; }, IntPtr.Zero);
-                Panel panel = new Panel() { BackgroundImage = thumbnailImage, Tag = image, Size = thumbnailImage.Size };
+                var thumbnailImage = image.GetThumbnailImage(panelImages.Height, panelImages.Height, () => { return true; }, IntPtr.Zero);
+                Panel panel = new Panel() { BackgroundImage = thumbnailImage, Tag = image.Clone(), Size = thumbnailImage.Size };
                 panel.DoubleClick += (sender, e) =>
                     {
                         var imageTag = ((Panel)sender).Tag as Image;

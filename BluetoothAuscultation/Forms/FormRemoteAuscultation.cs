@@ -115,7 +115,7 @@ namespace BluetoothAuscultation.Forms
             }
             if (!DgvTable.Select().Where(r => r[0].ToString() == "True").Any())
             {
-                MessageBox.Show("请选择在线的听诊器！");
+                MessageBox.Show("请选择听诊器！");
                 return;
             }
             while (true)
@@ -736,7 +736,7 @@ namespace BluetoothAuscultation.Forms
                 {
                     Invoke(new MethodInvoker(delegate()
                     {
-                        formProcessBar.Title = string.Format("远程听诊中... {0} 秒", formProcessBar.Times);
+                        formProcessBar.Title = string.Format("远程教学中... {0} 秒", formProcessBar.Times);
                     }));
                 };
                 stethoscope.StartAudioInput();

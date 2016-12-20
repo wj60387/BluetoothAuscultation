@@ -261,7 +261,7 @@ namespace BluetoothAuscultation.Forms
             this.btnSelect.Size = new System.Drawing.Size(84, 26);
             this.btnSelect.TabIndex = 12;
             this.btnSelect.Tag = "start";
-            this.btnSelect.Text = "发起会诊";
+            this.btnSelect.Text = "开始会诊";
             this.btnSelect.UseVisualStyleBackColor = false;
             this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
             // 

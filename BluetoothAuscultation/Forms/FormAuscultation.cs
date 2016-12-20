@@ -245,11 +245,11 @@ namespace BluetoothAuscultation.Forms
                 {
                     Invoke(new MethodInvoker(delegate()
                     {
-                        formProcessBar.Title = string.Format("远程听诊中... {0} 秒", formProcessBar.Times);
+                        formProcessBar.Title = string.Format("远程教学中... {0} 秒", formProcessBar.Times);
                     }));
                 };
                 stethoscope.StartAudioInput();
-                Mediator.ShowMsg(string.Format("听诊器 {0} 开始远程听诊...", stethoscope.Name));
+                Mediator.ShowMsg(string.Format("听诊器 {0} 开始远程教学...", stethoscope.Name));
                 // Stream audio from the stethoscope to the computer.
                 while (formProcessBar.DialogResult != System.Windows.Forms.DialogResult.Cancel
                     && dgvRemote.Rows.Count > 0)
@@ -412,7 +412,7 @@ namespace BluetoothAuscultation.Forms
                       {
                           Invoke(new MethodInvoker(() =>
                             {
-                                formProcessBar.Title = string.Format("远程听诊中... {0} 秒", formProcessBar.Times);
+                                formProcessBar.Title = string.Format("远程教学中... {0} 秒", formProcessBar.Times);
                             }));
                       };
                     formProcessBar.ShowDialog();

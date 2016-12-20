@@ -43,7 +43,7 @@ namespace BluetoothAuscultation.Forms
                 this.Close();
                 return;
             }
-            MessageBox.Show(string.Format("注册码 {0} 无效或者与您的机器不匹配", txtRegisteredCode.Text),"激活码无效", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show(string.Format("注册码 {0} 无效...", txtRegisteredCode.Text),"激活码无效", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
        

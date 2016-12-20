@@ -15,7 +15,9 @@ namespace BluetoothAuscultation.IGetAudioInfo
         bool isPlay { get; }
         DataTable GetAudioByHis(string PGUID );
 
-        Image[] GetImage(string PGUID); 
+        Image[] GetImage(string PGUID);
+
+        void GetInfo(string PGUID,out string sex,out int age);
 
     }
     public class LocalDown : IGetInfo
@@ -33,7 +35,7 @@ namespace BluetoothAuscultation.IGetAudioInfo
                 foreach (var file in files)
                 {
                     if (list.Count > 3) break;
-                    Image image = Image.FromFile(file) ;
+                    Image image = Setting.getImage(file);
                     if (image != null)
                     {
                         list.Add(image);
@@ -59,8 +61,18 @@ namespace BluetoothAuscultation.IGetAudioInfo
             var dt = Mediator.sqliteHelper.ExecuteDatatable(sql, PGUID );
             return dt;
         }
+        public void GetInfo(string PGUID, out string sex, out int age)
+        {
+            sex = "男"; age = 18;
+            string sql = "select PatientSex,PatientAge from AudioInfoDown where PGUID={0}  ";
+            var dt = Mediator.sqliteHelper.ExecuteDatatable(sql, PGUID);
+            if(dt!=null && dt.Rows.Count>0)
+            {
+                sex = dt.Rows[0]["PatientSex"] + "";
+                age = (int)dt.Rows[0]["PatientSex"];
+            }
+        }
     }
-
     public class CloudUpload : IGetInfo
     {
 
@@ -81,6 +93,28 @@ namespace BluetoothAuscultation.IGetAudioInfo
                 var ds = Mediator.remoteService.ExecuteDataset(sql, new string[] { PGUID });
                 return ds.Tables[0];
             }
+        }
+        public void GetInfo(string PGUID, out string sex, out int age)
+        {
+            sex = "男"; age = 18;
+            string sql = "select PatientSex,PatientAge from PatientInfo where PGUID={0}  ";
+            using (OperationContextScope scope = new OperationContextScope(Mediator.remoteService.InnerChannel))
+            {
+                MessageHeader header = MessageHeader.CreateHeader("SN", "http://tempuri.org", Setting.authorizationInfo.AuthorizationNum);
+                OperationContext.Current.OutgoingMessageHeaders.Add(header);
+                header = MessageHeader.CreateHeader("MAC", "http://tempuri.org", Setting.authorizationInfo.MachineCode);
+                OperationContext.Current.OutgoingMessageHeaders.Add(header);
+                var ds = Mediator.remoteService.ExecuteDataset(sql, new string[] { PGUID });
+                if (ds == null || ds.Tables.Count == 0) return;
+                var dt = ds.Tables[0];
+                if (dt != null && dt.Rows.Count > 0)
+                {
+                    sex = dt.Rows[0]["PatientSex"] + "";
+                    age = (int)dt.Rows[0]["PatientSex"];
+                }
+            }
+            
+           
         }
         public Image[] GetImage(string PGUID)
         {
@@ -120,7 +154,7 @@ namespace BluetoothAuscultation.IGetAudioInfo
                         stream.Close();
 
                     }
-                    Image image = new Bitmap(fileLocalPath);
+                    Image image = Setting.getImage(fileLocalPath);// Image.FromFile();// new Bitmap(fileLocalPath);
                     if(image!=null)
                     list.Add(image);
                   //  File.Delete(fileLocalPath);
@@ -209,13 +243,35 @@ namespace BluetoothAuscultation.IGetAudioInfo
                         stream.Close();
 
                     }
-                    Image image = new Bitmap(fileLocalPath);
+                    Image image = Setting.getImage(fileLocalPath);// Image.FromFile(fileLocalPath) 
                     if (image != null)
                         list.Add(image);
                     //File.Delete(fileLocalPath);
                 }
             }
             return list.ToArray();
+        }
+        public void GetInfo(string PGUID, out string sex, out int age)
+        {
+            sex = "男"; age = 18;
+            string sql = "select PatientSex,PatientAge from PatientInfo where PGUID={0}  ";
+            using (OperationContextScope scope = new OperationContextScope(Mediator.remoteService.InnerChannel))
+            {
+                MessageHeader header = MessageHeader.CreateHeader("SN", "http://tempuri.org", Setting.authorizationInfo.AuthorizationNum);
+                OperationContext.Current.OutgoingMessageHeaders.Add(header);
+                header = MessageHeader.CreateHeader("MAC", "http://tempuri.org", Setting.authorizationInfo.MachineCode);
+                OperationContext.Current.OutgoingMessageHeaders.Add(header);
+                var ds = Mediator.remoteService.ExecuteDataset(sql, new string[] { PGUID });
+                if (ds == null || ds.Tables.Count == 0) return;
+                var dt = ds.Tables[0];
+                if (dt != null && dt.Rows.Count > 0)
+                {
+                    sex = dt.Rows[0]["PatientSex"] + "";
+                    age = (int)dt.Rows[0]["PatientSex"];
+                }
+            }
+
+
         }
     }
 }

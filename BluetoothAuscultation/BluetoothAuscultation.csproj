@@ -125,6 +125,10 @@
     <Compile Include="ExtendControl\MenuTreeViewEx.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="ExtendControl\Pic\PicItem.cs" />
+    <Compile Include="ExtendControl\Pic\PicControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="ExtendControl\PictureBoxEx.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -450,6 +454,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Debug\Image\jcbg.png" />
     <Content Include="bin\Debug\Image\upload.png" />
     <Content Include="bin\Debug\Image\download.png" />
     <Content Include="bin\Debug\Image\share.png" />
@@ -533,6 +538,7 @@
     <Content Include="bin\Release\Image\xq.png" />
     <Content Include="bin\Release\Image\YCJX.png" />
     <Content Include="bin\Release\Image\YDTZ.png" />
+    <Content Include="bin\Release\Image\jcbg.png" />
     <Content Include="bin\Release\InTheHand.Net.Personal.dll" />
     <Content Include="bin\Release\InTheHand.Net.Personal.xml" />
     <Content Include="bin\Release\Ionic.Zip.dll" />

@@ -335,8 +335,17 @@ namespace BluetoothAuscultation.Forms
                                 if(Mediator.remoteService.isExistFolder(remoteDir))
                                 {
                                     var remoteFiles = Mediator.remoteService.GetFolderFiles(remoteDir, "*.*", true);
+                                    var localFiles = Directory.GetFiles(string.Format("Enclosure\\Down\\{0}", PGUID));
+                                   
                                     if(remoteFiles!=null)
                                     {
+                                        foreach (var file in localFiles)
+                                        {
+                                            if (!remoteFiles.Select(f => Path.GetFileName(f)).Contains(Path.GetFileName(file)))
+                                            {
+                                                File.Delete(file);
+                                            }
+                                        }
                                         foreach (var remoteFile in remoteFiles)
                                         {
                                             var fileSize = Mediator.remoteService.GetFileLength(remoteFile);
@@ -363,6 +372,8 @@ namespace BluetoothAuscultation.Forms
                                             }
                                         }
                                     }
+                                    Mediator.ShowMsg("下载完毕！");
+
                                 }
                             }
                         }
@@ -569,8 +580,19 @@ namespace BluetoothAuscultation.Forms
                             if (Mediator.remoteService.isExistFolder(remoteDir))
                             {
                                 var remoteFiles = Mediator.remoteService.GetFolderFiles(remoteDir, "*.*", true);
+
+                                var localFiles = Directory.GetFiles(string.Format("Enclosure\\Down\\{0}", PGUID));
+
+                                
                                 if (remoteFiles != null)
                                 {
+                                    foreach (var file in localFiles)
+                                    {
+                                        if (!remoteFiles.Select(f => Path.GetFileName(f)).Contains(Path.GetFileName(file)))
+                                        {
+                                            File.Delete(file);
+                                        }
+                                    }
                                     foreach (var remoteFile in remoteFiles)
                                     {
                                         var fileSize = Mediator.remoteService.GetFileLength(remoteFile);
@@ -597,6 +619,7 @@ namespace BluetoothAuscultation.Forms
                                         }
                                     }
                                 }
+                                Mediator.ShowMsg("下载完毕！");
                             }
 
                         }
@@ -618,6 +641,8 @@ namespace BluetoothAuscultation.Forms
                                     PatientID = row["PatientID"] + "",
                                     PatientName = row["PatientName"] + "",
                                     DocName = row["DocName"] + "",
+                                    PatientSex = row["PatientSex"] + "",
+                                    PatientAge = (int)row["PatientAge"],
                                     DocDiagnose = row["DocDiagnose"] + "",
                                     DocRemark = row["DocRemark"] + "",
                                     His = row["Flag"] + "",

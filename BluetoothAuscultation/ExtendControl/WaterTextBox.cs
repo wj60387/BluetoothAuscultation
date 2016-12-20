@@ -30,7 +30,7 @@ namespace BluetoothAuscultation.ExtendControl
                 using (Graphics g=this.CreateGraphics())
                 {
                     StringFormat sf = new StringFormat() {
-                        Alignment = StringAlignment.Near, LineAlignment = StringAlignment.Center };
+                        Alignment = StringAlignment.Near, LineAlignment = StringAlignment.Near };
                     g.DrawString(waterText,   this.Font, new SolidBrush(Color.Gray),this.ClientRectangle, sf);
                    g.Dispose();
                 }

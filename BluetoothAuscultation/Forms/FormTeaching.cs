@@ -143,7 +143,7 @@ namespace BluetoothAuscultation.Forms
                 {
                     Invoke(new MethodInvoker(delegate()
                     {
-                        formProcessBar.Title = string.Format("音频教学中... {0} 秒", formProcessBar.Times);
+                        formProcessBar.Title = string.Format("听诊教学中... {0} 秒", formProcessBar.Times);
                     }));
                 };
                 byte[] packet = new byte[128];

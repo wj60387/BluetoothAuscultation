@@ -105,5 +105,10 @@ namespace BluetoothAuscultation.Forms
             }
             this.DialogResult = System.Windows.Forms.DialogResult.OK;
         }
+
+        private void txtStetRemark_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

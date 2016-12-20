@@ -47,10 +47,11 @@ namespace BluetoothAuscultation.Forms
             //this.dataGridViewEx1.RowTemplate.DefaultCellStyle.ForeColor = Color.FromArgb(215, 228, 242);
             txtDocName.Text = Setting.GetStetInfoByStetName(StetName).Owner;
             PatientType = Setting.GetStetInfoByStetName(StetName).StetType;
-            //if (string.IsNullOrEmpty(txtDocName.Text))
-            //{
-            //    MessageBox.Show("听诊器 " + StetName + " 未配置所属人");
-            //}
+            if(isSave)
+            {
+                PatientAge = int.Parse(Setting.GetPatientAgeByGUID(this.PatientGUID));
+                PatientSex = Setting.GetPatientSexByGUID(PatientGUID);
+            }
             LoadFile();
         }
         void LoadAudio()
@@ -175,7 +176,7 @@ namespace BluetoothAuscultation.Forms
             set {
                 if (!new string[] { "男", "女" }.Contains(value)) throw new Exception("性别为男女,不能为"+value);
                 radioButton1.Checked = "男" == value;
-                radioButton1.Checked = "男" != value;
+                radioButton2.Checked = "男" != value;
             } 
         }
         public int PatientAge { get { return (int)numAge.Value; } set { numAge.Value = value; } }
@@ -291,6 +292,15 @@ namespace BluetoothAuscultation.Forms
                 if (Directory.Exists(localDir))
                 {
                     var localFiles = Directory.GetFiles(localDir);
+
+                    var remoteFiles = Mediator.remoteService.GetFolderFiles(remoteFile, "*.*", true);
+                    foreach (var file in remoteFiles)
+                    {
+                        if(!localFiles.Select(f=>Path.GetFileName(f)).Contains(Path.GetFileName(file)))
+                        {
+                            Mediator.remoteService.DeleteFile(file);
+                        }
+                    }
                     foreach (var localFile in localFiles)
                     {
                         var remoteFilePath = Path.Combine(remoteFile, Path.GetFileName(localFile));
@@ -568,6 +578,14 @@ namespace BluetoothAuscultation.Forms
         string Dir = @"Enclosure\Local\{0}";
         private void label8_Click(object sender, EventArgs e)
         {
+              var loaclDir = string.Format(Dir, this.PatientGUID);
+              if (Directory.Exists(loaclDir))
+              {
+                  System.Diagnostics.Process.Start(loaclDir);
+              }
+        }
+        void InsertImage()
+        {
             if (!isSave)
             {
                 MessageBox.Show("请先保存!");
@@ -583,27 +601,28 @@ namespace BluetoothAuscultation.Forms
                 var files = ofd.FileNames;
                 foreach (var file in files)
                 {
-                     var dest=Path.Combine(string.Format(Dir, PatientGUID), Path.GetFileName(file));
-                     if (File.Exists(dest))
-                     {
-                        if( DialogResult.Yes == MessageBox.Show("是否覆盖已有的文件?","覆盖同名文件", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+                    var dest = Path.Combine(string.Format(Dir, PatientGUID), Path.GetFileName(file));
+                    if (File.Exists(dest))
+                    {
+                        if (DialogResult.Yes == MessageBox.Show("是否覆盖已有的文件?", "覆盖同名文件", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
                         {
                             File.Delete(dest);
-                            
+
                         }
                         else
                         {
                             continue;
                         }
-                     }
-                     File.Copy(file, dest, true);
-                   
-                     
+                    }
+                    File.Copy(file, dest, true);
+
+
                 }
                 LoadFile();
                 MessageBox.Show("上传成功！");
             }
         }
+        
         void LoadFile()
         {
             if(isSave)
@@ -611,17 +630,63 @@ namespace BluetoothAuscultation.Forms
                 var loaclDir = string.Format(Dir, this.PatientGUID);
                 if(Directory.Exists(loaclDir))
                 {
-                    int i = 0;
                     var files = Directory.GetFiles(loaclDir);
                     panelImages.Controls.Clear();
+
+                    if (files.Length < 3)
+                    {
+                        var _image = Setting.ImageJCBG.Clone() as Image;
+                        var _thumbnailImage = _image.GetThumbnailImage(panelImages.Height, panelImages.Height, () => { return true; }, IntPtr.Zero);
+                        Panel _panel = new Panel() { BackgroundImage = _thumbnailImage, Size = _thumbnailImage.Size };
+                        _panel.Click += (sender, e) =>
+                        {
+                            InsertImage();
+                        };
+                        _panel.Dock = DockStyle.Left;
+                        panelImages.Controls.Add(_panel);
+                    }
+
+
                     foreach (var file in files)
                     {
-                        if (i > 3) break;
-                        var image = Image.FromFile(file);
+                        var image = Setting.getImage(file);
                         if (image == null) continue;
-                        i++;
-                        var thumbnailImage = image.GetThumbnailImage(50, panelImages.Height, () => { return true; }, IntPtr.Zero);
-                        Panel panel = new Panel() { BackgroundImage = thumbnailImage, Name = Path.GetFileName(file), Size = thumbnailImage.Size };
+                        var thumbnailImage = image.GetThumbnailImage(panelImages.Height, panelImages.Height, () => { return true; }, IntPtr.Zero);
+
+                        using (Graphics g = Graphics.FromImage(thumbnailImage))
+                        {
+                            StringFormat sf = new StringFormat()
+                            {
+                                Alignment = StringAlignment.Center,
+                                LineAlignment = StringAlignment.Center
+                            };
+                            g.DrawString("-", new Font("微软雅黑", 16f, FontStyle.Bold), new SolidBrush(Color.Red),
+                                new Rectangle(new Point(24, 0), new Size(8, 8)), sf);
+                            g.Dispose();
+                        }
+                        Panel panel = new Panel() { BackgroundImage = thumbnailImage, Name = Path.GetFileName(file), Size = thumbnailImage.Size
+                        
+                       
+                        };
+                        panel.Click += (sender, e) =>
+                        {
+                            var point = panel.PointToClient(MousePosition);
+                            var rect = new Rectangle(new Point(24, 0), new Size(8, 8));
+                            if(rect.Contains(point))
+                            {
+                                if(DialogResult.OK==MessageBox.Show("确定要删除此报告?","删除提示", 
+                                     MessageBoxButtons.OKCancel, MessageBoxIcon.Question))
+                                {
+                                    var fileName = ((Panel)sender).Name;
+                                    var filePath = Path.Combine(loaclDir, fileName);
+                                    if (File.Exists(filePath))
+                                    {
+                                        File.Delete(filePath);
+                                        LoadFile();
+                                    }
+                                }
+                            }
+                        };
                         panel.DoubleClick+=(sender,e)=>
                             {
                                 var fileName = ((Panel)sender).Name;
@@ -631,20 +696,15 @@ namespace BluetoothAuscultation.Forms
                                     System.Diagnostics.Process.Start(filePath);
                                 }
                             };
-                        //panel.BorderStyle = BorderStyle.Fixed3D;
                         panel.Dock = DockStyle.Left;
                         panelImages.Controls.Add(panel);
                     }
-
+                   
                 }
             }
         }
 
-        //private void cbHis_TextChanged(object sender, EventArgs e)
-        //{
-        //    LoadAudio();
-        //}
-
+       
          
     }
 }

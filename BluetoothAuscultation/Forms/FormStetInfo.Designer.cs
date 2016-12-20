@@ -35,22 +35,22 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.label6 = new System.Windows.Forms.Label();
             this.btnSure = new BluetoothAuscultation.ExtendControl.ButtonEx();
             this.txtStetRemark = new BluetoothAuscultation.ExtendControl.WaterTextBox();
             this.txtStetFunc = new BluetoothAuscultation.ExtendControl.WaterTextBox();
             this.txtStetOwner = new BluetoothAuscultation.ExtendControl.WaterTextBox();
             this.txtStetChineseName = new BluetoothAuscultation.ExtendControl.WaterTextBox();
             this.txtStetName = new BluetoothAuscultation.ExtendControl.WaterTextBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(22, 21);
+            this.label1.Location = new System.Drawing.Point(14, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(83, 17);
             this.label1.TabIndex = 1;
@@ -59,7 +59,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(34, 86);
+            this.label2.Location = new System.Drawing.Point(22, 90);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 17);
             this.label2.TabIndex = 3;
@@ -68,7 +68,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(22, 128);
+            this.label3.Location = new System.Drawing.Point(14, 131);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(83, 17);
             this.label3.TabIndex = 5;
@@ -77,7 +77,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(34, 180);
+            this.label4.Location = new System.Drawing.Point(22, 180);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 17);
             this.label4.TabIndex = 7;
@@ -86,7 +86,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(34, 227);
+            this.label5.Location = new System.Drawing.Point(22, 227);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(71, 17);
             this.label5.TabIndex = 9;
@@ -96,86 +96,10 @@
             // 
             this.panel1.Controls.Add(this.btnSure);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 309);
+            this.panel1.Location = new System.Drawing.Point(0, 324);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(361, 62);
+            this.panel1.Size = new System.Drawing.Size(361, 47);
             this.panel1.TabIndex = 11;
-            // 
-            // btnSure
-            // 
-            this.btnSure.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnSure.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(185)))), ((int)(((byte)(213)))));
-            this.btnSure.FlatAppearance.BorderSize = 0;
-            this.btnSure.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSure.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnSure.Location = new System.Drawing.Point(146, 22);
-            this.btnSure.Name = "btnSure";
-            this.btnSure.Size = new System.Drawing.Size(75, 24);
-            this.btnSure.TabIndex = 10;
-            this.btnSure.Text = "确定";
-            this.btnSure.UseVisualStyleBackColor = false;
-            this.btnSure.Click += new System.EventHandler(this.btnSure_Click);
-            // 
-            // txtStetRemark
-            // 
-            this.txtStetRemark.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtStetRemark.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtStetRemark.Location = new System.Drawing.Point(121, 224);
-            this.txtStetRemark.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtStetRemark.Multiline = true;
-            this.txtStetRemark.Name = "txtStetRemark";
-            this.txtStetRemark.Size = new System.Drawing.Size(213, 77);
-            this.txtStetRemark.TabIndex = 8;
-            this.txtStetRemark.WaterText = "听诊器备注";
-            // 
-            // txtStetFunc
-            // 
-            this.txtStetFunc.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtStetFunc.Location = new System.Drawing.Point(121, 181);
-            this.txtStetFunc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtStetFunc.Multiline = true;
-            this.txtStetFunc.Name = "txtStetFunc";
-            this.txtStetFunc.Size = new System.Drawing.Size(213, 21);
-            this.txtStetFunc.TabIndex = 6;
-            this.txtStetFunc.WaterText = "听诊器描述";
-            // 
-            // txtStetOwner
-            // 
-            this.txtStetOwner.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtStetOwner.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtStetOwner.Location = new System.Drawing.Point(121, 128);
-            this.txtStetOwner.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtStetOwner.Multiline = true;
-            this.txtStetOwner.Name = "txtStetOwner";
-            this.txtStetOwner.Size = new System.Drawing.Size(213, 21);
-            this.txtStetOwner.TabIndex = 4;
-            this.txtStetOwner.WaterText = "听诊器所属人";
-            // 
-            // txtStetChineseName
-            // 
-            this.txtStetChineseName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtStetChineseName.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtStetChineseName.Location = new System.Drawing.Point(121, 86);
-            this.txtStetChineseName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtStetChineseName.Multiline = true;
-            this.txtStetChineseName.Name = "txtStetChineseName";
-            this.txtStetChineseName.Size = new System.Drawing.Size(213, 21);
-            this.txtStetChineseName.TabIndex = 2;
-            this.txtStetChineseName.WaterText = "听诊器名称";
-            // 
-            // txtStetName
-            // 
-            this.txtStetName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtStetName.Enabled = false;
-            this.txtStetName.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtStetName.Location = new System.Drawing.Point(121, 21);
-            this.txtStetName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtStetName.Multiline = true;
-            this.txtStetName.Name = "txtStetName";
-            this.txtStetName.ReadOnly = true;
-            this.txtStetName.Size = new System.Drawing.Size(213, 21);
-            this.txtStetName.TabIndex = 0;
-            this.txtStetName.WaterText = "听诊器序列号";
             // 
             // radioButton2
             // 
@@ -192,7 +116,7 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(121, 51);
+            this.radioButton1.Location = new System.Drawing.Point(114, 51);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(50, 21);
             this.radioButton1.TabIndex = 12;
@@ -207,6 +131,84 @@
             this.label6.Size = new System.Drawing.Size(71, 17);
             this.label6.TabIndex = 14;
             this.label6.Text = "听诊器用途:";
+            // 
+            // btnSure
+            // 
+            this.btnSure.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnSure.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(185)))), ((int)(((byte)(213)))));
+            this.btnSure.FlatAppearance.BorderSize = 0;
+            this.btnSure.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSure.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnSure.Location = new System.Drawing.Point(139, 11);
+            this.btnSure.Name = "btnSure";
+            this.btnSure.Size = new System.Drawing.Size(75, 24);
+            this.btnSure.TabIndex = 10;
+            this.btnSure.Text = "确定";
+            this.btnSure.UseVisualStyleBackColor = false;
+            this.btnSure.Click += new System.EventHandler(this.btnSure_Click);
+            // 
+            // txtStetRemark
+            // 
+            this.txtStetRemark.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtStetRemark.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtStetRemark.Location = new System.Drawing.Point(108, 224);
+            this.txtStetRemark.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtStetRemark.Multiline = true;
+            this.txtStetRemark.Name = "txtStetRemark";
+            this.txtStetRemark.Size = new System.Drawing.Size(226, 77);
+            this.txtStetRemark.TabIndex = 8;
+            this.txtStetRemark.WaterText = "听诊器备注";
+            this.txtStetRemark.TextChanged += new System.EventHandler(this.txtStetRemark_TextChanged);
+            // 
+            // txtStetFunc
+            // 
+            this.txtStetFunc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtStetFunc.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtStetFunc.Location = new System.Drawing.Point(108, 179);
+            this.txtStetFunc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtStetFunc.Multiline = true;
+            this.txtStetFunc.Name = "txtStetFunc";
+            this.txtStetFunc.Size = new System.Drawing.Size(226, 21);
+            this.txtStetFunc.TabIndex = 6;
+            this.txtStetFunc.WaterText = "听诊器描述";
+            // 
+            // txtStetOwner
+            // 
+            this.txtStetOwner.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtStetOwner.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtStetOwner.Location = new System.Drawing.Point(108, 132);
+            this.txtStetOwner.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtStetOwner.Multiline = true;
+            this.txtStetOwner.Name = "txtStetOwner";
+            this.txtStetOwner.Size = new System.Drawing.Size(226, 21);
+            this.txtStetOwner.TabIndex = 4;
+            this.txtStetOwner.WaterText = "听诊器所属人";
+            // 
+            // txtStetChineseName
+            // 
+            this.txtStetChineseName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtStetChineseName.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtStetChineseName.Location = new System.Drawing.Point(108, 90);
+            this.txtStetChineseName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtStetChineseName.Multiline = true;
+            this.txtStetChineseName.Name = "txtStetChineseName";
+            this.txtStetChineseName.Size = new System.Drawing.Size(226, 21);
+            this.txtStetChineseName.TabIndex = 2;
+            this.txtStetChineseName.WaterText = "听诊器名称";
+            // 
+            // txtStetName
+            // 
+            this.txtStetName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtStetName.Enabled = false;
+            this.txtStetName.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtStetName.Location = new System.Drawing.Point(108, 20);
+            this.txtStetName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtStetName.Multiline = true;
+            this.txtStetName.Name = "txtStetName";
+            this.txtStetName.ReadOnly = true;
+            this.txtStetName.Size = new System.Drawing.Size(220, 21);
+            this.txtStetName.TabIndex = 0;
+            this.txtStetName.WaterText = "听诊器序列号";
             // 
             // FormStetInfo
             // 
@@ -233,7 +235,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormStetInfo";
-            this.Text = "听诊器信息";
+            this.Text = "听诊器配置";
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

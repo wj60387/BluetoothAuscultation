@@ -154,6 +154,7 @@ namespace BluetoothAuscultation
         public static Image ImageDownload = new Bitmap("Image\\download.png");
         public static Image ImageDetail = new Bitmap("Image\\xq.png");
         public static Image ImageRecord = new Bitmap("Image\\ly.png");
+        public static Image ImageJCBG= new Bitmap("Image\\jcbg.png");
 
         public static Image ImageTZPZ = new Bitmap("Image\\TZPZ.png");
         public static Image ImageTZLY = new Bitmap("Image\\TZLY.png");
@@ -247,5 +248,30 @@ namespace BluetoothAuscultation
             }
             return 0;
         }
+        public static string GetPatientAgeByGUID(string guid)
+        {
+            string sql = "select PatientAge from PatientInfo where PatientGUID={0}";
+            var obj = Mediator.sqliteHelper.ExecuteScalar(sql, guid);
+            return obj+"";
+        }
+        public static string GetPatientSexByGUID(string guid)
+        {
+            string sql = "select PatientSex from PatientInfo where PatientGUID={0}";
+            var obj = Mediator.sqliteHelper.ExecuteScalar(sql, guid);
+            return obj + "";
+        }
+        public static Image getImage(string filePath)
+        {
+            System.IO.FileStream fs = new System.IO.FileStream(filePath, FileMode.Open, FileAccess.Read);
+            int byteLength = (int)fs.Length;
+            byte[] fileBytes = new byte[byteLength];
+            fs.Read(fileBytes, 0, byteLength);
+
+            //文件流关閉,文件解除锁定
+            fs.Close();
+            Image image = Image.FromStream(new MemoryStream(fileBytes));
+            return image;
+        }
+       
     }
 }
