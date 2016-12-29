@@ -622,13 +622,13 @@ namespace BluetoothAuscultation.Forms
                 MessageBox.Show("上传成功！");
             }
         }
-        
+
         void LoadFile()
         {
-            if(isSave)
+            if (isSave)
             {
                 var loaclDir = string.Format(Dir, this.PatientGUID);
-                if(Directory.Exists(loaclDir))
+                if (Directory.Exists(loaclDir))
                 {
                     var files = Directory.GetFiles(loaclDir);
                     panelImages.Controls.Clear();
@@ -664,17 +664,21 @@ namespace BluetoothAuscultation.Forms
                                 new Rectangle(new Point(24, 0), new Size(8, 8)), sf);
                             g.Dispose();
                         }
-                        Panel panel = new Panel() { BackgroundImage = thumbnailImage, Name = Path.GetFileName(file), Size = thumbnailImage.Size
-                        
-                       
+                        Panel panel = new Panel()
+                        {
+                            BackgroundImage = thumbnailImage,
+                            Name = Path.GetFileName(file),
+                            Size = thumbnailImage.Size
+
+
                         };
                         panel.Click += (sender, e) =>
                         {
                             var point = panel.PointToClient(MousePosition);
                             var rect = new Rectangle(new Point(24, 0), new Size(8, 8));
-                            if(rect.Contains(point))
+                            if (rect.Contains(point))
                             {
-                                if(DialogResult.OK==MessageBox.Show("确定要删除此报告?","删除提示", 
+                                if (DialogResult.OK == MessageBox.Show("确定要删除此报告?", "删除提示",
                                      MessageBoxButtons.OKCancel, MessageBoxIcon.Question))
                                 {
                                     var fileName = ((Panel)sender).Name;
@@ -687,11 +691,11 @@ namespace BluetoothAuscultation.Forms
                                 }
                             }
                         };
-                        panel.DoubleClick+=(sender,e)=>
+                        panel.DoubleClick += (sender, e) =>
                             {
                                 var fileName = ((Panel)sender).Name;
                                 var filePath = Path.Combine(loaclDir, fileName);
-                                if(File.Exists(filePath))
+                                if (File.Exists(filePath))
                                 {
                                     System.Diagnostics.Process.Start(filePath);
                                 }
@@ -699,12 +703,23 @@ namespace BluetoothAuscultation.Forms
                         panel.Dock = DockStyle.Left;
                         panelImages.Controls.Add(panel);
                     }
-                   
+
+                }
+                else
+                {
+                    panelImages.Controls.Clear();
+                    var _image = Setting.ImageJCBG.Clone() as Image;
+                    var _thumbnailImage = _image.GetThumbnailImage(panelImages.Height, panelImages.Height, () => { return true; }, IntPtr.Zero);
+                    Panel _panel = new Panel() { BackgroundImage = _thumbnailImage, Size = _thumbnailImage.Size };
+                    _panel.Click += (sender, e) =>
+                    {
+                        InsertImage();
+                    };
+                    _panel.Dock = DockStyle.Left;
+                    panelImages.Controls.Add(_panel);
                 }
             }
         }
-
-       
          
     }
 }

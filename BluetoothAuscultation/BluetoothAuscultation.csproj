@@ -455,6 +455,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\Debug\Image\jcbg.png" />
+    <Content Include="bin\Debug\Image\jcbg2.png" />
     <Content Include="bin\Debug\Image\upload.png" />
     <Content Include="bin\Debug\Image\download.png" />
     <Content Include="bin\Debug\Image\share.png" />

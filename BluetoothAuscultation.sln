@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BluetoothAuscultation", "Bl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsUI", "WinFormsUI\WinFormsUI.csproj", "{C75532C4-765B-418E-B09B-46D36B2ABDB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Updater", "Updater\Updater.csproj", "{6E19A4EC-B822-45F6-808C-0E4AAC6C3119}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerManager", "ServerManager\ServerManager.csproj", "{0010DBC5-F319-4675-ADCD-44FBD5F5587F}"
 EndProject
 Global
@@ -41,16 +39,6 @@ Global
 		{C75532C4-765B-418E-B09B-46D36B2ABDB1}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{C75532C4-765B-418E-B09B-46D36B2ABDB1}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{C75532C4-765B-418E-B09B-46D36B2ABDB1}.Release|x86.ActiveCfg = Release|Any CPU
-		{6E19A4EC-B822-45F6-808C-0E4AAC6C3119}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{6E19A4EC-B822-45F6-808C-0E4AAC6C3119}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
-		{6E19A4EC-B822-45F6-808C-0E4AAC6C3119}.Debug|Mixed Platforms.Build.0 = Debug|x86
-		{6E19A4EC-B822-45F6-808C-0E4AAC6C3119}.Debug|x86.ActiveCfg = Debug|x86
-		{6E19A4EC-B822-45F6-808C-0E4AAC6C3119}.Debug|x86.Build.0 = Debug|x86
-		{6E19A4EC-B822-45F6-808C-0E4AAC6C3119}.Release|Any CPU.ActiveCfg = Release|x86
-		{6E19A4EC-B822-45F6-808C-0E4AAC6C3119}.Release|Mixed Platforms.ActiveCfg = Release|x86
-		{6E19A4EC-B822-45F6-808C-0E4AAC6C3119}.Release|Mixed Platforms.Build.0 = Release|x86
-		{6E19A4EC-B822-45F6-808C-0E4AAC6C3119}.Release|x86.ActiveCfg = Release|x86
-		{6E19A4EC-B822-45F6-808C-0E4AAC6C3119}.Release|x86.Build.0 = Release|x86
 		{0010DBC5-F319-4675-ADCD-44FBD5F5587F}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{0010DBC5-F319-4675-ADCD-44FBD5F5587F}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
 		{0010DBC5-F319-4675-ADCD-44FBD5F5587F}.Debug|Mixed Platforms.Build.0 = Debug|x86
