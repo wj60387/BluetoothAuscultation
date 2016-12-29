@@ -63,6 +63,10 @@
     <SignManifests>false</SignManifests>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ESkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\ESkin.dll</HintPath>
+    </Reference>
     <Reference Include="InTheHand.Net.Personal, Version=3.5.605.0, Culture=neutral, PublicKeyToken=ea38caa273134499, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Program Files (x86)\Littmann Stethoscope SDK\Net 1.2.28.0\bin\InTheHand.Net.Personal.dll</HintPath>
@@ -279,6 +283,12 @@
     <Compile Include="Forms\FormTeaching.Designer.cs">
       <DependentUpon>FormTeaching.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="IGetAudioInfo\IGetFJ.cs" />
     <Compile Include="IGetAudioInfo\IGetInfo.cs" />
     <Compile Include="IHandleMessage.cs" />
@@ -402,6 +412,9 @@
     <EmbeddedResource Include="Forms\FormTeaching.resx">
       <DependentUpon>FormTeaching.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -512,6 +525,7 @@
     <Content Include="bin\Release\Errors\2016\9\2016-09-25.txt" />
     <Content Include="bin\Release\Errors\2016\9\2016-09-27.txt" />
     <Content Include="bin\Release\Errors\2016\9\2016-09-30.txt" />
+    <Content Include="bin\Release\ESkin.dll" />
     <Content Include="bin\Release\Image\delete.png" />
     <Content Include="bin\Release\Image\download.png" />
     <Content Include="bin\Release\Image\edit.png" />
@@ -613,6 +627,14 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Resources\背景.png" />
+    <None Include="Resources\奔达听诊平台.png" />
+    <None Include="Resources\登入框登录200x40.png" />
+    <None Include="Resources\密码图标.png" />
+    <None Include="Resources\输入框密码.png" />
+    <None Include="Resources\输入框账号.png" />
+    <None Include="Resources\账号图标.png" />
+    <None Include="Resources\系统按钮关闭.png" />
     <Content Include="布迪亨1.ico" />
   </ItemGroup>
   <ItemGroup>

@@ -140,13 +140,13 @@ namespace BluetoothAuscultation
                 }
             }
             Setting.authorizationInfo = authorizationInfo;
-            //var formLogin = new FormLogin();
-            //formLogin.StartPosition = FormStartPosition.CenterScreen;
+            var formLogin = new FrmLogin();
+            formLogin.StartPosition = FormStartPosition.CenterScreen;
             //formLogin.SN = authorizationInfo.AuthorizationNum;
-            //if(DialogResult.OK!=formLogin.ShowDialog())
-            //{
-            //    return;
-            //}
+            if (DialogResult.OK != formLogin.ShowDialog())
+            {
+                return;
+            }
             Application.ApplicationExit += new EventHandler(Application_ApplicationExit);
             var formMain = new FormMain();
             formMain.WindowState = FormWindowState.Maximized;
